@@ -23,10 +23,18 @@ export class CouratiComponent {
       ]}
     ]},
     { nom: 'École Nationale des Sciences Appliquées (ENSA)', formations: [
-      { type: 'Cycle Ingénieur', filieres: [
+      { type: 'Prepa', filieres: [
         { nom: 'Génie Informatique', lien: 'https://drive.google.com/ensa-gi' },
         { nom: 'Génie Civil', lien: 'https://drive.google.com/ensa-gc' }
       ]}
+    ]},
+
+        { nom: 'École Nationale de Commerce et de Gestion (ENCG)', formations: [
+      { type: 'Prepa', filieres: [
+        { nom: 'Comptabilite', lien: 'https://drive.google.com/ensa-gi' },
+        { nom: 'Marketing', lien: 'https://drive.google.com/ensa-gc' }
+      ]},
+      
     ]}
   ];
 

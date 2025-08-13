@@ -1,48 +1,42 @@
-<nav class="navbar navbar-expand-lg bg-light navbar navbar-light" style="background-color: #a9aeb1;">
-  <div class="container-fluid px-5 shadow p-3 mb-5 bg-white rounded">
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm">
+  <div class="container-fluid px-5">
     <!-- Logo à gauche -->
-    <a class="navbar-brand" href="#">USEMK</a>
-
-    <!-- Bouton toggle pour les petits écrans -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand fw-bold fs-4" href="#"></a>
+    <img src="favicons.ico" alt="">
+    <!-- Toggle menu mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Contenu de la navbar -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Liste et bouton alignés à droite -->
-      <div class="d-flex ms-auto align-items-center">
-        <ul class="navbar-nav me-2">
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="home">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="documents">Documents</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="universite">Université</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="activites">Activités</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="courati">Courati</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="equipes">A propos USEMK</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="contact">Contact</a>
-          </li>
-             <button class="btn btn-outline-success" type="submit">Arabe</button>
-        </ul>
-      </div>
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="documents">Documents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="universite">Université</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="activites">Activités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="courati">Courati</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="equipes">À propos USEMK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact">Contact</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-outline-light btn-sm px-3">Arabe</button>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

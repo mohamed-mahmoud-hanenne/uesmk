@@ -1,13 +1,12 @@
 <!-- Header-->
-<header class="py-5">
+<br><br>
+<header class="bg-dark py-5">
   <div class="container px-5">
     <div class="row gx-5 justify-content-center">
       <div class="col-lg-6">
         <div class="text-center my-5">
           <h1 class="display-5 fw-bolder text-white mb-2">Bienvenue dans la site officiel du USEMMK</h1>
-          <p class="lead text-white-50 mb-4">L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) est une
-            organisation qui a pour mission de représenter, soutenir et rassembler les étudiants et stagiaires
-            mauritaniens vivant à Kénitra. </p>
+          <p class="lead text-white-50 mb-4"> L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) </p>
           <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
             <a class="btn btn-success btn-lg px-4 me-sm-3" routerLink="/contact">Contact</a>
             <a class="btn btn-outline-light btn-lg px-4" routerLink="/equipes">Lire plus</a>
@@ -18,71 +17,99 @@
   </div>
 </header>
 <!-- Features section-->
-<section class="py-5 border-bottom" id="features">
-  <h1 class="text-center">Actualités</h1>
+<section class="py-5 border-bottom section-actus" id="features">
   <div class="container px-5 my-5">
+    <h1 class="text-center fw-bold mb-5">Actualités</h1>
     <div class="row gx-5">
+
+      <!-- Carte 1 -->
       <div class="col-lg-4 mb-5 mb-lg-0">
-        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-        <h2 class="h4 fw-bolder">Code bourse AMCI</h2>
-        <p>Découvrez les informations essentielles concernant le code bourse AMCI et son utilisation. Ce code vous
-          permet d’accéder à vos avantages financiers et de suivre l’état de votre bourse en toute simplicité.</p>
-        <a class="text-decoration-none text-success" href="https://cesamcentrale.org/code-de-bourse/">
-          Recuperer votre code
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        <div class="actus-card text-center p-4 shadow-sm rounded-4">
+          <div class="icon-wrapper bg-success text-white mb-3">
+            <i class="bi bi-collection"></i>
+          </div>
+          <h2 class="h4 fw-bolder">Code bourse AMCI</h2>
+          <p class="text-muted">
+            Découvrez les informations essentielles concernant le code bourse AMCI et son utilisation...
+          </p>
+          <a class="actus-link" href="https://cesamcentrale.org/code-de-bourse/">
+            Récupérer votre code <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
+
+      <!-- Carte 2 -->
       <div class="col-lg-4 mb-5 mb-lg-0">
-        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-        <h2 class="h4 fw-bolder">Laisser passer</h2>
-        <p>Obtenez rapidement votre laisser-passer pour accéder aux services et événements prévus. Cette autorisation
-          est indispensable pour vos démarches administratives et vos déplacements officiels.</p>
-        <a class="text-decoration-none text-success" routerLink="/documents">
-          Voir les details
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        <div class="actus-card text-center p-4 shadow-sm rounded-4">
+          <div class="icon-wrapper bg-success text-white mb-3">
+            <i class="bi bi-building"></i>
+          </div>
+          <h2 class="h4 fw-bolder">Laisser passer</h2>
+          <p class="text-muted">
+            Obtenez rapidement votre laisser-passer pour accéder aux services et événements prévus...
+          </p>
+          <a class="actus-link" routerLink="/documents">
+            Voir les détails <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
+
+      <!-- Carte 3 -->
       <div class="col-lg-4">
-        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-        <h2 class="h4 fw-bolder">Logement</h2>
-        <p>Accédez aux informations concernant les options de logement mises à votre disposition. Découvrez les
-          conditions d’éligibilité, les types d’hébergement et les modalités d’attribution.</p>
-        <a class="text-decoration-none text-success" href="#!">
-          Remplir le formulaire
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        <div class="actus-card text-center p-4 shadow-sm rounded-4">
+          <div class="icon-wrapper bg-success text-white mb-3">
+            <i class="bi bi-toggles2"></i>
+          </div>
+          <h2 class="h4 fw-bolder">Logement</h2>
+          <p class="text-muted">
+            Accédez aux informations concernant les options de logement mises à votre disposition...
+          </p>
+          <a class="actus-link" href="#!">
+            Remplir le formulaire <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
-<!-- Pricing section-->
-<section class="bg-light py-5" id="events-carousel">
+
+<!-- Événements section -->
+<section class="py-5" id="events-carousel">
   <div class="container px-5 my-5">
     <div class="text-center mb-4">
-      <h2 class="fw-bolder">Nos Événements</h2>
-      <p class="lead text-muted">Cliquez sur Suivant / Précédent pour voir les autres événements</p>
+      <h2 class="fw-bolder text-success">Nos Événements</h2>
+      <p class="lead text-muted">
+        Cliquez sur <strong>Suivant</strong> / <strong>Précédent</strong> pour voir les autres événements.
+      </p>
     </div>
 
     <div class="events-carousel mx-auto">
-      <div class="image-row d-flex gap-3">
+      <div class="image-row d-flex gap-3 justify-content-center">
         <ng-container *ngFor="let src of visibleImages; let i = index">
           <div class="image-wrapper">
-            <img [src]="src" (error)="onImgError($event)" [alt]="'Événement ' + (currentIndex + i + 1)">
+            <img 
+              [src]="src" 
+              (error)="onImgError($event)" 
+              [alt]="'Événement ' + (currentIndex + i + 1)" 
+              class="img-fluid rounded shadow-sm"
+            >
           </div>
         </ng-container>
 
-        <!-- si une seule image visible, on ajoute un placeholder invisible pour garder la largeur -->
+        <!-- Placeholder invisible si une seule image -->
         <div *ngIf="visibleImages.length === 1" class="image-wrapper placeholder"></div>
       </div>
 
-      <div class="controls d-flex justify-content-center gap-3 mt-3">
-        <button class="btn btn-outline-success" (click)="prev()" [disabled]="isPrevDisabled()">
+      <div class="controls d-flex justify-content-center gap-3 mt-4">
+        <button class="btn btn-outline-success px-4" (click)="prev()" [disabled]="isPrevDisabled()">
           <i class="bi bi-chevron-left"></i> Précédent
         </button>
-        <button class="btn btn-success" (click)="next()" [disabled]="isNextDisabled()">
+        <button class="btn btn-success px-4" (click)="next()" [disabled]="isNextDisabled()">
           Suivant <i class="bi bi-chevron-right"></i>
         </button>
       </div>
     </div>
   </div>
 </section>
+

@@ -16,6 +16,51 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* Couleur & style navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #00695c, #26a69a);
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+/* Logo */
+.custom-navbar .navbar-brand {
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #ffd54f;
+}
+
+/* Liens menu */
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0.4rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #fff;
+  border-bottom: 2px solid #ffd54f;
+}
+
+/* Bouton langue */
+.custom-navbar .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .btn-outline-light:hover {
+  background-color: #ffd54f;
+  border-color: #ffd54f;
+  color: #000;
+}
+
+
 
 :root {
   --bs-blue: #0d6efd;
@@ -10842,6 +10887,6 @@ textarea.form-control-lg {
 
 
 .nav-item a:hover{
-  text-decoration: underline;
+ 
   cursor: pointer;
 }

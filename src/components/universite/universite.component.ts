@@ -18,11 +18,44 @@ export class UniversiteComponent {
       details: '/details/uit'
     },
     {
-      nom: 'ENS Kénitra',
-      description: 'École Normale Supérieure de Kénitra',
+      nom: 'ENSC Ecole Nationale Supérieure de Chimie Kénitra',
+      description: 'ENSC Kénitra',
+      lien: 'https://ensc.uit.ac.ma/',
+      details: '/details/ens'
+    },
+
+        {
+      nom: 'EST Kénitra',
+      description: 'École Supérieure de Technologie de Kénitra',
+      lien: 'https://est.uit.ac.ma/',
+      details: '/details/ens'
+    }, 
+
+    
+        {
+      nom: 'ENSA École Nationale des Sciences Appliquées de Kénitra',
+      description: 'ENSA Kénitra',
       lien: 'https://ensa.uit.ac.ma/',
       details: '/details/ens'
-    }
+    }, 
+
+
+            {
+      nom: 'ENCG École Nationale de Commerce et de Gestion de Kénitra',
+      description: 'ENSG Kénitra',
+      lien: 'https://encg.uit.ac.ma/',
+      details: '/details/ens'
+    }, 
+
+                {
+      nom: 'FS Faculté des Sciences de Kénitra',
+      description: 'FS Kénitra',
+      lien: 'https://fs.uit.ac.ma/',
+      details: '/details/ens'
+    }, 
+
+
+    
   ];
 
 }
