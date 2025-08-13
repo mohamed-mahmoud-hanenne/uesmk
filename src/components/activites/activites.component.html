@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Nos Activités</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4" *ngFor="let act of activites">
+      <div class="card shadow-lg h-100">
+        <img [src]="act.image" class="card-img-top img-fixed" alt="{{ act.titre }}">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ act.titre }}</h5>
+          <p class="card-text">{{ act.description }}</p>
+          <a [routerLink]="act.details" class="btn btn-success">Voir détails</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

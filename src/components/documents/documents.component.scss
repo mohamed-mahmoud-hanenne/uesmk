@@ -1,0 +1,116 @@
+/* Container padding plus léger */
+.container {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* En-tête */
+header.py-5 {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+header .doc h1 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  background: #f9fdf9;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Icon containers */
+.feature {
+  font-size: 2.8rem;
+  padding: 1.3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+/* Titres des cartes */
+.card-body h2 {
+  color: #155724;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bouton Voir plus */
+.btn-outline-success {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.35rem 1.4rem;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success:hover, 
+.btn-outline-success:focus {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+  text-decoration: none;
+  box-shadow: 0 0 10px #28a745aa;
+}
+
+/* Liste déroulante */
+.collapse {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e9f5ec;
+  border-radius: 0.7rem;
+  border: 1px solid #c1e1c1;
+  box-shadow: inset 0 0 8px #d6f0d6;
+}
+
+.list-group-item {
+  border: none;
+  padding-left: 0;
+  color: #2d5a2d;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Icônes flèches avec animation */
+.transition-icon {
+  transition: transform 0.3s ease;
+}
+
+.bi-chevron-up {
+  transform: rotate(180deg);
+}
+
+/* Responsive tweaks */
+@media (max-width: 575.98px) {
+  .card-body {
+    padding: 1.2rem 1rem;
+  }
+  .feature {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+  }
+  .btn-outline-success {
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+  }
+}

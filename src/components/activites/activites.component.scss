@@ -1,0 +1,11 @@
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.img-fixed {
+  height: 250px;
+  object-fit: cover;
+}

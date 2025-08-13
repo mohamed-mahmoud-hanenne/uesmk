@@ -1,0 +1,34 @@
+.event-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 0.75rem;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.event-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0.75rem;
+}
+
+.event-card:hover .event-overlay {
+  opacity: 1;
+}
+
+.event-overlay h5,
+.event-overlay small {
+  margin: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 576px) {
+  .event-overlay h5 {
+    font-size: 1rem;
+  }
+}

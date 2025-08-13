@@ -1,0 +1,253 @@
+<header class="py-5">
+    <div class="container px-lg-5 test">
+        <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+            <div class="m-4 doc">
+                <h1 class="display-5 fw-bold">Documents</h1>
+                <!-- <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has
+                    been removed from the framework. Why create custom CSS when you can use utilities?</p>
+                <a class="btn btn-primary btn-lg" href="#!">Call to action</a> -->
+            </div>
+        </div>
+    </div>
+</header>
+<section class="pt-4">
+    <div class="container px-lg-5">
+        <!-- Page Features -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-lg-5">
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-file-earmark-text"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Documents de séjour</h2>
+
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList1" aria-expanded="false"
+                            aria-controls="docsList1" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList1" 
+                             style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;"
+                             >
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Certificat médical</li>
+                                <li class="list-group-item">Casier judiciaire</li>
+                                <li class="list-group-item">Attestation de scolarité</li>
+                                <li class="list-group-item">Attestation d'homologation si l'établissement est privé</li>
+                                <li class="list-group-item">Copie du passeport</li>
+                                <li class="list-group-item">Copie du visa</li> 
+                                <li class="list-group-item">Copie du cachet de dernière entrée au Maroc</li> 
+                                <li class="list-group-item">Contrat de bail</li> 
+                                <li class="list-group-item">Copie de la facture d'électricité</li> 
+                                <li class="list-group-item">Six photos d'identité (photos récentes et en couleur)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi bi-airplane"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Laisser passer</h2>
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList2" aria-expanded="false"
+                            aria-controls="docsList2" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList2" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copie du passeport avec le cachet de la dernière entrée</li>
+                                <li class="list-group-item">Copie du visa et de la carte de séjour si disponibles</li>
+                                <li class="list-group-item">Détermination de la date du voyage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-person-badge"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Prise en charge</h2>
+
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList3" aria-expanded="false"
+                            aria-controls="docsList3" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList3" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copie du passeport</li>
+                                <li class="list-group-item">Copie de l'attestation d'inscription</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-clipboard-x"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Lettre d'excuse</h2>
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList4" aria-expanded="false"
+                            aria-controls="docsList4" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList4" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copie du passeport avec le cachet de la dernière entrée</li>
+                                <li class="list-group-item">Copie du visa et de la carte de séjour si disponibles</li>
+                                <li class="list-group-item">Contrat de location</li>
+                                <li class="list-group-item">Attestation d'inscription</li>
+                                <li class="list-group-item">Numéro de téléphone</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-shield-check"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Attestion de conformité de nom</h2>
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList5" aria-expanded="false"
+                            aria-controls="docsList5" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList5" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copies des documents requis et correspondance entre eux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-pencil-square"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Procuratrion</h2>
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList6" aria-expanded="false"
+                            aria-controls="docsList6" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList6" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copie du passeport du mandant et du mandataire avec attestation d'inscription du premier</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-cash-coin"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Renouvellement de la bourse de l'etat</h2>
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList7" aria-expanded="false"
+                            aria-controls="docsList7" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList7" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copie du passeport</li>
+                                <li class="list-group-item">Copie de l'attestation d'inscription</li>
+                                <li class="list-group-item">Copie des relevés de notes de l'année précédente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                 <div class="col mb-5">
+                <div class="card bg-light border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
+                            <i class="bi-bank"></i>
+                        </div>
+                        <h2 class="fs-4 fw-bold">Renouvellement de la bourse AMCI</h2>
+                        <!-- Bouton avec flèche -->
+                        <button class="btn btn-outline-success align-items-center justify-content-center gap-2 mt-2"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#docsList8" aria-expanded="false"
+                            aria-controls="docsList8" (click)="toggleIcon(1)">
+                            Voir plus
+                            <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"
+                                class="transition-icon"></i>
+                        </button>
+
+                        <!-- Liste déroulante -->
+                        <div class="collapse mt-3" id="docsList8" 
+                         style="width: 100%; border: 1px solid #dee2e6; box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); border-radius: 0.5rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Copie du passeport</li>
+                                <li class="list-group-item">Copie de l'attestation d'inscription</li>
+                                <li class="list-group-item">Copie des relevés de notes de l'année précédente</li>
+                                <li class="list-group-item">Retrait du formulaire et le joindre au dossier</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
