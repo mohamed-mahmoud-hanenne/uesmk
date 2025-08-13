@@ -1,8 +1,11 @@
-a{
-    color: green;
+.logo-img {
+  height: 40px;           /* Hauteur contrôlée */
+  width: auto;            /* Garde les proportions */
+  object-fit: contain;    /* Évite la déformation */
 }
 
-img{
-    width: 50px;
-    height: 50px;
+@media (max-width: 576px) {
+  .logo-img {
+    height: 32px; /* Plus petit sur mobile */
+  }
 }

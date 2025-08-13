@@ -1,8 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm">
   <div class="container-fluid px-5">
-    <!-- Logo à gauche -->
-    <a class="navbar-brand fw-bold fs-4" href="#"></a>
-    <img src="favicons.ico" alt="">
+    <!-- Logo + nom -->
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-4" routerLink="home">
+      <img src="favicons.ico" alt="USEMK Logo" class="logo-img me-2">
+      USEMK
+    </a>
+
     <!-- Toggle menu mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,27 +15,13 @@
     <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="home">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="documents">Documents</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="universite">Université</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="activites">Activités</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="courati">Courati</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="equipes">À propos USEMK</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="contact">Contact</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" routerLink="home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="documents">Documents</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="universite">Université</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="activites">Activités</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="courati">Courati</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="equipes">À propos USEMK</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="contact">Contact</a></li>
         <li class="nav-item ms-lg-3">
           <button class="btn btn-outline-light btn-sm px-3">Arabe</button>
         </li>
