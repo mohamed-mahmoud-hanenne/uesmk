@@ -32,3 +32,50 @@
     font-size: 1rem;
   }
 }
+
+
+.events-carousel {
+  max-width: 920px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* chaque image prend la moitié de la zone (2 images visibles) */
+.image-wrapper {
+  width: calc(50% - 0.5rem); /* ajuste l'espace */
+  flex: 0 0 calc(50% - 0.5rem);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  display: block;
+}
+
+/* placeholder invisible mais qui garde la place */
+.placeholder {
+  visibility: hidden;
+}
+
+/* responsive: sur très petit écran on garde deux images mais réduit la hauteur */
+@media (max-width: 480px) {
+  .image-wrapper img {
+    height: 150px;
+  }
+}
+
+
+header {
+  background-image: url('/public/equi.jpg');
+  background-size: cover;       /* L'image couvre tout l'espace */
+  background-position: center;  /* Centrée */
+  background-repeat: no-repeat; /* Pas de répétition */
+}

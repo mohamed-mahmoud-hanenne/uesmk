@@ -16,14 +16,16 @@ export class EquipesComponent {
     sportifs afin de renforcer la solidarité et favoriser l'intégration.
   `;
 
-  equipe = [
-    { nom: 'Mohamed Ahmed', poste: 'Président', numero: '+212 6 12 34 56 78', image: 'components/assets/equipe.avif' },
-    { nom: 'Fatoumata Sow', poste: 'Vice-présidente', numero: '+212 6 98 76 54 32', image: 'assets/equipe/fatoumata.jpg' },
-    { nom: 'Abdallah Ould', poste: 'Secrétaire Général', numero: '+212 6 23 45 67 89', image: 'assets/equipe/abdallah.jpg' },
-    { nom: 'Mariam Mint', poste: 'Trésorière', numero: '+212 6 87 65 43 21', image: 'assets/equipe/mariam.jpg' },
-    { nom: 'Cheikh Oumar', poste: 'Responsable Communication', numero: '+212 6 11 22 33 44', image: 'assets/equipe/cheikh.jpg' },
-    { nom: 'Aïcha Mint', poste: 'Responsable Événements', numero: '+212 6 55 44 33 22', image: 'assets/equipe/aicha.jpg' },
-    { nom: 'Ismail Ould', poste: 'Responsable Logistique', numero: '+212 6 77 88 99 00', image: 'assets/equipe/ismail.jpg' },
-  ];
+equipe = [
+  { nom: 'Mohamed Ahmed', poste: 'Président', numero: '+212 6 12 34 56 78', image: 'equipe.png' },
+  { nom: 'Fatoumata Sow', poste: 'Vice-présidente', numero: '+212 6 98 76 54 32', image: 'etudiant-universite.jpg' },
+  { nom: 'Abdallah Ould', poste: 'Secrétaire Général', numero: '+212 6 23 45 67 89', image: 'etudiant.webp' },
+  { nom: 'Mariam Mint', poste: 'Trésorière', numero: '+212 6 87 65 43 21', image: 'equipe.png' },
+  { nom: 'Cheikh Oumar', poste: 'Responsable Communication', numero: '+212 6 11 22 33 44', image: 'etudiant-universite.jpg' },
+  { nom: 'Aïcha Mint', poste: 'Responsable Événements', numero: '+212 6 55 44 33 22', image: 'etudiant.webp' },
+  { nom: 'Ismail Ould', poste: 'Responsable Logistique', numero: '+212 6 77 88 99 00', image: 'equipe.png' },
+];
+
+
 
 }

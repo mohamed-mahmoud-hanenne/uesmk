@@ -13,38 +13,38 @@ export class ActivitesComponent {
    activites = [
     {
       titre: 'Cérémonie de bienvenue 2025',
-      image: 'assets/activites/bienvenue.jpg',
+      image: 'images.jpeg',
       description: 'Accueil des nouveaux étudiants mauritaniens à Kénitra.',
       details: '/activites/bienvenue-2025'
     },
     {
       titre: 'Tournoi de football UESMK',
-      image: 'assets/activites/football.jpg',
+      image: 'tournoir.jpeg',
       description: 'Compétition sportive entre les étudiants mauritaniens.',
       details: '/activites/football'
     },
     {
       titre: 'Conférence sur l’orientation académique',
-      image: 'assets/activites/conference.jpg',
+      image: 'conf.jpeg',
       description: 'Session d’orientation et d’information pour les étudiants.',
       details: '/activites/conference-orientation'
     },
 
     {
       titre: 'Cérémonie de bienvenue 2025',
-      image: 'assets/activites/bienvenue.jpg',
+      image: 'images.jpeg',
       description: 'Accueil des nouveaux étudiants mauritaniens à Kénitra.',
       details: '/activites/bienvenue-2025'
     },
     {
       titre: 'Tournoi de football UESMK',
-      image: 'assets/activites/football.jpg',
+      image: 'tournoir.jpeg',
       description: 'Compétition sportive entre les étudiants mauritaniens.',
       details: '/activites/football'
     },
     {
       titre: 'Conférence sur l’orientation académique',
-      image: 'assets/activites/conference.jpg',
+      image: 'conf.jpeg',
       description: 'Session d’orientation et d’information pour les étudiants.',
       details: '/activites/conference-orientation'
     }
