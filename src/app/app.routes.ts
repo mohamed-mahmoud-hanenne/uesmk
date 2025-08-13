@@ -8,8 +8,8 @@ import { CouratiComponent } from '../components/courati/courati.component';
 import { ContactComponent } from '../components/contact/contact.component';
 
 export const routes: Routes = [
-    {path:'', redirectTo:'home', pathMatch:'full'},
-    {path:'home', component:HomeComponent},
+    {path:'', redirectTo:'', pathMatch:'full'},
+    {path:'', component:HomeComponent},
     {path:'documents', component:DocumentsComponent},
     {path:'universite', component:UniversiteComponent},
     {path:'activites', component:ActivitesComponent},
