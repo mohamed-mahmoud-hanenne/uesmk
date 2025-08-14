@@ -13,8 +13,31 @@
  */
 
  body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;  
+  padding-top: 70px;
 }
+
+/* Mode sombre global */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+// .section-actus {
+//   color: #121212;
+// }
+
+/* Navbar en mode sombre */
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+/* Liens clairs */
+.dark-mode a {
+  color: white !important;
+}
+
+
 
 /* Couleur & style navbar */
 .custom-navbar {

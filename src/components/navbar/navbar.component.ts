@@ -9,4 +9,10 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
+    isDarkMode = false; // Par défaut clair
+
+  toggleTheme() {
+    this.isDarkMode = !this.isDarkMode; // Inverse le mode
+    document.body.classList.toggle('dark-mode', this.isDarkMode); // Ajoute/enlève la classe au body
+  }
 }

@@ -73,7 +73,7 @@
 }
 
 
-header {
+head {
   background-image: url('/public/equipe.png');
   background-size: cover;       /* L'image couvre tout l'espace */
   background-position: center;  /* Centrée */
@@ -81,9 +81,10 @@ header {
 }
 
 
-/* Section générale */
-.section-actus {
-  background-color: #f9f9f9;
+  /* Section générale */
+  .section-actus {
+    // background-color: #f9f9f9;
+    cursor: pointer;
 }
 
 /* Icônes */
@@ -99,7 +100,7 @@ header {
 
 /* Cartes */
 .actus-card {
-  background: #fff;
+  // background: #fff;
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
