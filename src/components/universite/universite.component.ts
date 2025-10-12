@@ -47,13 +47,55 @@ export class UniversiteComponent {
       details: '/details/ens'
     }, 
 
-                {
+  {
       nom: 'FS Faculté des Sciences de Kénitra',
       description: 'FS Kénitra',
       lien: 'https://fs.uit.ac.ma/',
       details: '/details/ens'
-    }, 
+  }, 
 
+    {
+      nom: 'Faculté des Langues des Lettres et des Arts',
+      description: 'Faculté des Langues des Lettres et des Arts',
+      lien: 'https://flla.uit.ac.ma/',
+      details: '/details/ens'
+  }, 
+
+      {
+      nom: 'Faculté des Sciences Humaines et Sociales',
+      description: 'Faculté des Sciences Humaines et Sociales',
+      lien: 'https://fshs.uit.ac.ma/',
+      details: '/details/ens'
+  }, 
+
+    {
+      nom: "Faculté d'Economie et de Gestion",
+      description: "Faculté d'Economie et de Gestion",
+      lien: 'https://feg.uit.ac.ma/',
+      details: '/details/ens'
+  }, 
+
+      {
+      nom: "Faculté des Sciences Juridiques et Politiques",
+      description: "Faculté des Sciences Juridiques et Politiques",
+      lien: 'https://fsjp.uit.ac.ma/',
+      details: '/details/ens'
+  }, 
+
+  
+  {
+      nom: "Ecole Supérieure d'Education et de Formation",
+      description: "Ecole Supérieure d'Education et de Formation",
+      lien: 'https://esef.uit.ac.ma/',
+      details: '/details/ens'
+  },
+
+    {
+      nom: "Institut des Métiers de Sport",
+      description: "Institut des Métiers de Sport",
+      lien: 'https://ims.uit.ac.ma/',
+      details: '/details/ens'
+  },
 
     
   ];

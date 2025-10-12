@@ -10,10 +10,16 @@ import { Component } from '@angular/core';
 export class EquipesComponent {
 
    description = `
-    L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) est une organisation
-    qui a pour mission de représenter, soutenir et rassembler les étudiants et stagiaires
-    mauritaniens vivant à Kénitra. Nous organisons des événements culturels, éducatifs et
-    sportifs afin de renforcer la solidarité et favoriser l'intégration.
+      L’Union des Étudiants et Stagiaires Mauritaniens (UESM) est une organisation estudiantine
+      créée en 1997 à Rabat. Elle a pour mission principale d’accompagner les étudiants et stagiaires
+      mauritaniens dans leur parcours académique et social au Maroc, en favorisant leur intégration,
+      en défendant leurs intérêts et en organisant diverses activités scientifiques, culturelles et
+      associatives.
+      Afin de rapprocher ses actions des étudiants, l’Union est structurée en sections locales dans
+      plusieurs villes universitaires marocaines. La section de Kénitra, fondée il y a plus de treize
+      ans, poursuit les mêmes missions et incarne les mêmes valeurs que l’Union centrale, tout en
+      les adaptant aux besoins spécifiques des étudiants et stagiaires mauritaniens installés dans la
+      ville de Kénitra.
   `;
 
 equipe = [

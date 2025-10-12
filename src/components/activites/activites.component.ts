@@ -12,41 +12,63 @@ export class ActivitesComponent {
 
    activites = [
     {
-      titre: 'Cérémonie de bienvenue 2025',
+      titre: 'Tournois sportif',
       image: 'images.jpeg',
-      description: 'Accueil des nouveaux étudiants mauritaniens à Kénitra.',
+      description: 'Tournois sportif pour étudiants mauritaniens à Kénitra.',
       details: '/activites/bienvenue-2025'
     },
     {
-      titre: 'Tournoi de football UESMK',
+      titre: 'Soiré d’excellence & Eid al Adhaa',
       image: 'tournoir.jpeg',
-      description: 'Compétition sportive entre les étudiants mauritaniens.',
+      description: 'Soiré d’excellence & Eid al Adhaa desc. ',
       details: '/activites/football'
     },
     {
-      titre: 'Conférence sur l’orientation académique',
+      titre: 'Kénitra Mauri League ',
       image: 'conf.jpeg',
-      description: 'Session d’orientation et d’information pour les étudiants.',
+      description: 'Kénitra Mauri League descp. ',
       details: '/activites/conference-orientation'
     },
 
     {
-      titre: 'Cérémonie de bienvenue 2025',
+      titre: 'Fête de l’indépendance 2024',
       image: 'images.jpeg',
-      description: 'Accueil des nouveaux étudiants mauritaniens à Kénitra.',
+      description: 'Fête de l’indépendance 2024 à kénitra pour les étudiants mauritaniens.',
       details: '/activites/bienvenue-2025'
     },
     {
-      titre: 'Tournoi de football UESMK',
+      titre: 'Participation au MCF par AISEC',
       image: 'tournoir.jpeg',
-      description: 'Compétition sportive entre les étudiants mauritaniens.',
+      description: 'Participation au MCF par AISEC descp.',
       details: '/activites/football'
     },
     {
-      titre: 'Conférence sur l’orientation académique',
+      titre: 'Ifrane trip',
       image: 'conf.jpeg',
-      description: 'Session d’orientation et d’information pour les étudiants.',
+      description: 'Ifrane trip pour les étudiants.',
       details: '/activites/conference-orientation'
-    }
+    },
+
+    {
+      titre: 'Mini CAN cesam 2025',
+      image: 'conf.jpeg',
+      description: 'Mini CAN cesam 2025 pour les étudiants.',
+      details: '/activites/conference-orientation'
+    },
+
+    {
+      titre: 'Eid al fitr 2025',
+      image: 'conf.jpeg',
+      description: 'Eid al fitr 2025 pour les étudiants.',
+      details: '/activites/conference-orientation'
+    },
+
+        {
+      titre: 'Soiré d’excellence 2ème édition & Eid al adhaa',
+      image: 'conf.jpeg',
+      description: 'Soiré d’excellence 2ème édition & Eid al adhaa pour les étudiants.',
+      details: '/activites/conference-orientation'
+    },
+
   ];
 }

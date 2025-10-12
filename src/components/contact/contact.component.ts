@@ -10,13 +10,15 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   email = 'Uesmmk@gmail.com';
-  telephone = '+212606041737';
-  whatsappNumber = '+212606041737'; // Sans le +
+  telephone = '+222 27 80 03 79';
+  whatsappNumber = '+22227800379'; // Sans le +
 
   socials = [
-    { name: 'Facebook', icon: 'bi bi-facebook', url: 'https://www.facebook.com/profile.php?id=61559168396331' },
-    { name: 'Instagram', icon: 'bi bi-instagram', url: 'https://www.instagram.com/uesmk' },
-    { name: 'TikTok', icon: 'bi bi-tiktok', url: 'https://www.tiktok.com/@uesm.k?is_from_webapp=1&sender_device=pc' }
+    { name: 'Facebook', icon: 'bi bi-facebook', url: 'https://www.facebook.com/share/178zjRNZmS/?mibextid=wwXIfr' },
+    { name: 'Instagram', icon: 'bi bi-instagram', url: 'https://www.instagram.com/uesm.k?igsh=Y3V1Zjg2Y2UwaThl&utm_source=qr' },
+    { name: 'TikTok', icon: 'bi bi-tiktok', url: 'https://www.tiktok.com/@uesm.k?_t=ZM-90T23KsaaSq&_r=1' },
+    { name: 'Linkedin', icon: 'bi bi-linkedin', url: 'https://www.linkedin.com/company/uesmk' },
+    { name: 'Snapchat', icon: 'bi bi-snapchat', url: 'https://snapchat.com/t/ABkMqvCj' },
   ];
 
   openWhatsApp() {
