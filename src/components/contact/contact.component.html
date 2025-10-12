@@ -12,7 +12,9 @@
 
     <!-- Réseaux sociaux -->
     <div class="social-links mt-3">
-      <a *ngFor="let social of socials" [href]="social.url" target="_blank" class="social-icon">
+      <a *ngFor="let social of socials" 
+      [attr.href]="social.url" target="_blank" 
+      class="social-icon">
         <i [class]="social.icon"></i>
       </a>
     </div>

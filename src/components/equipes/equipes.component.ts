@@ -17,13 +17,12 @@ export class EquipesComponent {
   `;
 
 equipe = [
-  { nom: 'Mohamed Ahmed', poste: 'Président', numero: '+212 6 12 34 56 78', image: 'equipe.png' },
-  { nom: 'Fatoumata Sow', poste: 'Vice-présidente', numero: '+212 6 98 76 54 32', image: 'etudiant-universite.jpg' },
-  { nom: 'Abdallah Ould', poste: 'Secrétaire Général', numero: '+212 6 23 45 67 89', image: 'etudiant.webp' },
-  { nom: 'Mariam Mint', poste: 'Trésorière', numero: '+212 6 87 65 43 21', image: 'equipe.png' },
-  { nom: 'Cheikh Oumar', poste: 'Responsable Communication', numero: '+212 6 11 22 33 44', image: 'etudiant-universite.jpg' },
-  { nom: 'Aïcha Mint', poste: 'Responsable Événements', numero: '+212 6 55 44 33 22', image: 'etudiant.webp' },
-  { nom: 'Ismail Ould', poste: 'Responsable Logistique', numero: '+212 6 77 88 99 00', image: 'equipe.png' },
+  { nom: 'Elhadj Hamed', poste: 'Secrétaire général', numero: '+212 606 041 737', image: 'elhadj.jpeg' },
+  { nom: 'Khattary Amar Ould Baba', poste: 'Secrétaire général adjoint', numero: '+212 631 665 320', image: 'khatary.jpeg' },
+  { nom: 'Eboulabass Ennahoui', poste: 'Responsable de l’information et de la formation', numero: '+222 34 65 34 34', image: 'elabass.jpeg' },
+  { nom: 'Mohamed Mahmoud Hanenne', poste: 'Responsable des relations extérieures et des affaires académiques', numero: '+222 27 80 03 79', image: 'moi.jpeg' },
+  { nom: 'Kaber Sidi', poste: 'Responsable des finances et des affaires sociales', numero: '+212 610 576 108', image: 'etudiant-universite.jpg' },
+  { nom: 'Mariem Taleb', poste: 'Responsable de l’organisation et de la culture', numero: '+222 36 03 05 23', image: 'etudiant.webp' }
 ];
 
 
