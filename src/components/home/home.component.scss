@@ -161,3 +161,17 @@ header{
 .placeholder {
   visibility: hidden;
 }
+
+.header-bg {
+  background-image: url("/assets/images/bag-uesmk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  min-height: 70vh; /* ✅ hauteur visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
