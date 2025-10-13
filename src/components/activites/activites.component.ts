@@ -13,13 +13,13 @@ export class ActivitesComponent {
    activites = [
     {
       titre: 'Tournois sportif',
-      image: 'images.jpeg',
+      image: 'Tournois de foot.jpeg',
       description: 'Tournois sportif pour étudiants mauritaniens à Kénitra.',
       details: '/activites/bienvenue-2025'
     },
     {
       titre: 'Soiré d’excellence & Eid al Adhaa',
-      image: 'tournoir.jpeg',
+      image: 'Activité 2.jpeg',
       description: 'Soiré d’excellence & Eid al Adhaa desc. ',
       details: '/activites/football'
     },
