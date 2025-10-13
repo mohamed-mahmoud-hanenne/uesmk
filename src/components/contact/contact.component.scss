@@ -1,0 +1,38 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* espace entre les icônes */
+  margin-top: 10px;
+}
+
+.social-icon i {
+  font-size: 2.4rem; /* taille des icônes */
+  transition: all 0.3s ease;
+}
+
+/* 🎨 Couleurs officielles de chaque réseau */
+.social-icon.facebook i {
+  color: #1877F2; /* Facebook bleu */
+}
+
+.social-icon.instagram i {
+  color: #E4405F; /* Instagram rose */
+}
+
+.social-icon.tiktok i {
+  color: #000000; /* TikTok noir principal */
+}
+
+.social-icon.linkedin i {
+  color: #0A66C2; /* LinkedIn bleu */
+}
+
+.social-icon.snapchat i {
+  color: #FFFC00; /* Snapchat jaune */
+}
+
+/* Effet au survol : zoom + légère opacité */
+.social-icon:hover i {
+  transform: scale(1.2);
+  opacity: 0.8;
+}

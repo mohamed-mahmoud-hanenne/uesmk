@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
-  email = 'Uesmmk@gmail.com';
+  email = 'uesmmk@gmail.com';
   telephone = '+222 27 80 03 79';
   whatsappNumber = '+22227800379'; // Sans le +
 
