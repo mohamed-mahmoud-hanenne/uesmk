@@ -28,7 +28,7 @@ equipe = [
   { nom: 'Eboulabass Ennahoui', poste: 'Responsable de l’information et de la formation', numero: '+222 34 65 34 34', image: 'elabass.jpeg' },
   { nom: 'Mohamed Mahmoud Hanenne', poste: 'Responsable des relations extérieures et des affaires académiques', numero: '+222 27 80 03 79', image: 'moi.jpeg' },
   { nom: 'Kaber Sidi', poste: 'Responsable des finances et des affaires sociales', numero: '+212 610 576 108', image: 'etudiant-universite.jpg' },
-  { nom: 'Mariem Taleb', poste: 'Responsable de l’organisation et de la culture', numero: '+222 36 03 05 23', image: 'etudiant.webp' }
+  { nom: 'Mariem Taleb', poste: 'Responsable de l’organisation et de la culture', numero: '+222 36 03 05 23', image: 'Mariem.jpeg' }
 ];
 
 
