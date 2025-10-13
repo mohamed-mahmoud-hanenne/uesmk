@@ -54,27 +54,5 @@ export class HomeComponent {
     img.src = 'assets/placeholder-event.jpg'; // ajouter placeholder dans src/assets/
   }
 
-
-  // 🖼️ Liste des backgrounds
-  backgrounds: string[] = [
-    'assets/images/bag-uesmk.jpg',
-    'assets/images/equipe-uesmk.jpg'
-  ];
-
-  currentIndexe = 0;
-  currentBackground = this.backgrounds[0];
-  intervalId: any;
-
-  ngOnInit() {
-    // ⏳ Changement toutes les 3 secondes
-    this.intervalId = setInterval(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.backgrounds.length;
-      this.currentBackground = this.backgrounds[this.currentIndex];
-    }, 3000);
-  }
-
-  ngOnDestroy() {
-    clearInterval(this.intervalId);
-  }
-
+  
 }

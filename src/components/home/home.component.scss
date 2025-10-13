@@ -162,25 +162,17 @@ header{
   visibility: hidden;
 }
 
+
 .header-bg {
+  background-image: url("/assets/images/bag-uesmk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  min-height: 70vh;
+  min-height: 70vh; /* ✅ hauteur visible */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: background-image 1s ease-in-out; /* ✅ transition fluide */
 }
-
-/* Optionnel : ajouter un filtre sombre pour rendre le texte plus lisible */
-.header-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
