@@ -8,7 +8,7 @@
           <h1 class="display-5 fw-bolder text-white mb-2">Bienvenue dans le site officiel du UESMK</h1>
           <p class="lead text-white-50 mb-4">L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK)</p>
           <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-            <a class="btn btn-success btn-lg px-4 me-sm-3" routerLink="/contact">Contact</a>
+            <a class="btn btn-danger btn-lg px-4 me-sm-3" routerLink="/contact">Contact</a>
             <a class="btn btn-warning btn-lg px-4" routerLink="/equipes">Lire plus</a>
           </div>
         </div>
@@ -20,60 +20,117 @@
 <!-- Features section-->
 <section class="py-5 border-bottom section-actus" id="features">
   <div class="container px-5 my-5">
-    <h1 class="text-center fw-bold mb-5">Actualités</h1>
-    <div class="row gx-5">
+    <h1 class="text-center fw-bold mb-5 text-success">Actualités</h1>
 
-      <!-- Carte 1 -->
-      <div class="col-lg-4 mb-5 mb-lg-0">
-        <div class="actus-card text-center p-4 shadow-sm rounded-4">
-          <div class="icon-wrapper bg-success text-white mb-3">
-            <i class="bi bi-collection"></i>
+    <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+
+      <!-- Carte 1 : Documents de séjour -->
+      <div class="col mb-5">
+        <div class="card actus-card h-100 text-center border-0">
+          <div class="card-body p-4">
+            <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
+              <i class="bi bi-house-door"></i>
+            </div>
+            <h2 class="fs-5 fw-bold">Documents de séjour</h2>
+            <p class="text-muted mb-3">Liste des documents nécessaires pour le renouvellement de votre titre de séjour étudiant.</p>
+
+            <button class="btn btn-outline-success"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#docsSejour"
+                    aria-expanded="false"
+                    aria-controls="docsSejour"
+                    (click)="toggleIcon(1)">
+              Voir plus
+              <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"></i>
+            </button>
+
+            <div class="collapse mt-3" id="docsSejour">
+              <ul class="list-group list-group-flush text-start">
+                <li class="list-group-item">Copie du passeport (page d’identité et visa).</li>
+                <li class="list-group-item">Attestation d’inscription universitaire.</li>
+                <li class="list-group-item">Quittance de loyer ou contrat de location.</li>
+                <li class="list-group-item">Certificat de résidence délivré par la commune.</li>
+                <li class="list-group-item">Photocopie de la carte d’étudiant (si disponible).</li>
+              </ul>
+            </div>
           </div>
-          <h2 class="h4 fw-bolder">Code bourse AMCI</h2>
-          <p class="text-muted">
-            Découvrez les informations essentielles concernant le code bourse AMCI et son utilisation...
-          </p>
-          <a class="actus-link" href="https://cesamcentrale.org/code-de-bourse/">
-            Récupérer votre code <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
 
-      <!-- Carte 2 -->
-      <div class="col-lg-4 mb-5 mb-lg-0">
-        <div class="actus-card text-center p-4 shadow-sm rounded-4">
-          <div class="icon-wrapper bg-success text-white mb-3">
-            <i class="bi bi-building"></i>
+      <!-- Carte 2 : Renouvellement de la bourse AMCI -->
+      <div class="col mb-5">
+        <div class="card actus-card h-100 text-center border-0">
+          <div class="card-body p-4">
+            <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
+              <i class="bi bi-bank"></i>
+            </div>
+            <h2 class="fs-5 fw-bold">Renouvellement de la bourse AMCI</h2>
+            <p class="text-muted mb-3">Documents requis pour le renouvellement annuel de votre bourse AMCI.</p>
+
+            <button class="btn btn-outline-success"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#docsBourse"
+                    aria-expanded="false"
+                    aria-controls="docsBourse"
+                    (click)="toggleIcon(2)">
+              Voir plus
+              <i [ngClass]="{'bi bi-chevron-down': !isOpen[2], 'bi bi-chevron-up': isOpen[2]}"></i>
+            </button>
+
+            <div class="collapse mt-3" id="docsBourse">
+              <ul class="list-group list-group-flush text-start">
+                <li class="list-group-item">Relevé de notes de l’année précédente.</li>
+                <li class="list-group-item">Certificat de scolarité pour l’année en cours.</li>
+                <li class="list-group-item">Lettre de demande de renouvellement signée.</li>
+                <li class="list-group-item">Copie du passeport et du code bourse.</li>
+                <li class="list-group-item">Attestation de non-travail ou de non-bourse d’un autre organisme.</li>
+              </ul>
+            </div>
           </div>
-          <h2 class="h4 fw-bolder">Laisser passer</h2>
-          <p class="text-muted">
-            Obtenez rapidement votre laisser-passer pour accéder aux services et événements prévus...
-          </p>
-          <a class="actus-link" routerLink="/documents">
-            Voir les détails <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
 
-      <!-- Carte 3 -->
-      <div class="col-lg-4">
-        <div class="actus-card text-center p-4 shadow-sm rounded-4">
-          <div class="icon-wrapper bg-success text-white mb-3">
-            <i class="bi bi-toggles2"></i>
+      <!-- Carte 3 : Lien CESAM -->
+      <div class="col mb-5">
+        <div class="card actus-card h-100 text-center border-0">
+          <div class="card-body p-4">
+            <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
+              <i class="bi bi-link-45deg"></i>
+            </div>
+            <h2 class="fs-5 fw-bold">Code de bourse AMCI (CESAM)</h2>
+            <p class="text-muted mb-4">Accédez au site CESAM pour récupérer ou vérifier votre code de bourse AMCI.</p>
+            <a href="https://cesamcentrale.org/code-de-bourse/" target="_blank" class="btn btn-success">
+              Accéder au site CESAM <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <h2 class="h4 fw-bolder">Logement</h2>
-          <p class="text-muted">
-            Accédez aux informations concernant les options de logement mises à votre disposition...
-          </p>
-          <a class="actus-link" href="#!">
-            Remplir le formulaire <i class="bi bi-arrow-right"></i>
-          </a>
+        </div>
+      </div>
+
+      <!-- Carte 4 : Formulaire Google -->
+      <div class="col mb-5">
+        <div class="card actus-card h-100 text-center border-0">
+          <div class="card-body p-4">
+            <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
+              <i class="bi bi-ui-checks-grid"></i>
+            </div>
+            <h2 class="fs-5 fw-bold">Formulaire de logement</h2>
+            <p class="text-muted mb-4">Remplissez le formulaire Google pour soumettre vos informations à l’association.</p>
+            <a href="https://forms.gle/Udguxnu8fMExiTjw6" target="_blank" class="btn btn-success">
+              Ouvrir le formulaire <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
+
+
+
 
 <!-- Événements section -->
 <section class="py-5" id="events-carousel">

@@ -25,47 +25,47 @@ export class ActivitesComponent {
     },
     {
       titre: 'Kénitra Mauri League ',
-      image: 'conf.jpeg',
+      image: 'kenitra mauri league.jpeg',
       description: 'Kénitra Mauri League descp. ',
       details: '/activites/conference-orientation'
     },
 
     {
       titre: 'Fête de l’indépendance 2024',
-      image: 'images.jpeg',
+      image: 'Fête de l’indépendance.jpeg',
       description: 'Fête de l’indépendance 2024 à kénitra pour les étudiants mauritaniens.',
       details: '/activites/bienvenue-2025'
     },
     {
       titre: 'Participation au MCF par AISEC',
-      image: 'tournoir.jpeg',
+      image: 'Mcf aisec.jpeg',
       description: 'Participation au MCF par AISEC descp.',
       details: '/activites/football'
     },
     {
       titre: 'Ifrane trip',
-      image: 'conf.jpeg',
+      image: 'Ifrane trip.jpeg',
       description: 'Ifrane trip pour les étudiants.',
       details: '/activites/conference-orientation'
     },
 
     {
       titre: 'Mini CAN cesam 2025',
-      image: 'conf.jpeg',
+      image: 'Mini can cesam.jpeg',
       description: 'Mini CAN cesam 2025 pour les étudiants.',
       details: '/activites/conference-orientation'
     },
 
     {
       titre: 'Eid al fitr 2025',
-      image: 'conf.jpeg',
+      image: 'Eid al fitr 2025.jpeg',
       description: 'Eid al fitr 2025 pour les étudiants.',
       details: '/activites/conference-orientation'
     },
 
         {
       titre: 'Soiré d’excellence 2ème édition & Eid al adhaa',
-      image: 'conf.jpeg',
+      image: 'Soirée d’excellence 2025.jpeg',
       description: 'Soiré d’excellence 2ème édition & Eid al adhaa pour les étudiants.',
       details: '/activites/conference-orientation'
     },

@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
   email = 'uesmmk@gmail.com';
-  telephone = '+222 27 80 03 79';
+  telephone = '+212 603 838 874';
   whatsappNumber = '+22227800379'; // Sans le +
 
   socials = [

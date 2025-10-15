@@ -27,8 +27,8 @@ equipe = [
   { nom: 'Khattary Amar Ould Baba', poste: 'Secrétaire général adjoint', numero: '+212 631 665 320', image: 'khatary.jpeg' },
   { nom: 'Eboulabass Ennahoui', poste: 'Responsable de l’information et de la formation', numero: '+222 34 65 34 34', image: 'elabass.jpeg' },
   { nom: 'Mohamed Mahmoud Hanenne', poste: 'Responsable des relations extérieures et des affaires académiques', numero: '+222 27 80 03 79', image: 'moi.jpeg' },
-  { nom: 'Kaber Sidi', poste: 'Responsable des finances et des affaires sociales', numero: '+212 610 576 108', image: 'etudiant-universite.jpg' },
-  { nom: 'Mariem Taleb', poste: 'Responsable de l’organisation et de la culture', numero: '+222 36 03 05 23', image: 'Mariem.jpeg' }
+  { nom: 'Kaber Sidi', poste: 'Responsable des finances et des affaires sociales', numero: '+212 610 576 108', image: 'kaber.png' },
+  { nom: 'Mariem Taleb', poste: 'Responsable de l’organisation et de la culture', numero: '+212 653 821 475', image: 'Mariem.jpeg' }
 ];
 
 

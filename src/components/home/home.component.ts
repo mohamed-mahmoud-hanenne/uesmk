@@ -12,12 +12,16 @@ export class HomeComponent {
 
    // Met tes images réelles ici (doit être dans src/assets/events/)
   images = [
-    'images.jpeg',
-    'tournoir.jpeg',
-    'conf.jpeg',
-    'images.jpeg',
-    'tournoir.jpeg',
-    'conf.jpeg'
+    'Tournois de foot.jpeg',
+    'Activité 2.jpeg',
+    'kenitra mauri league.jpeg',
+    'Fête de l’indépendance.jpeg',
+    'Mcf aisec.jpeg',
+    'Ifrane trip.jpeg',
+    'Mini can cesam.jpeg',
+    'Eid al fitr 2025.jpeg',
+    'Soirée d’excellence 2025.jpeg'
+
   ];
 
   currentIndex = 0; // indice de la première image visible (0, 2, 4, ...)
@@ -53,6 +57,14 @@ export class HomeComponent {
     const img = evt.target as HTMLImageElement;
     img.src = 'assets/placeholder-event.jpg'; // ajouter placeholder dans src/assets/
   }
+
+
+  // pour documents
+    isOpen: { [key: number]: boolean } = {};
+
+toggleIcon(index: number) {
+  this.isOpen[index] = !this.isOpen[index];
+}
 
   
 }
