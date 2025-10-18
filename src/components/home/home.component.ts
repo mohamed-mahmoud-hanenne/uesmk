@@ -60,7 +60,12 @@ export class HomeComponent {
 
 
   // pour documents
-    isOpen: { [key: number]: boolean } = {};
+    isOpen: { [key: number]: boolean } = {
+      1: false,
+      2: false,
+      3: false,
+      4: false
+    };
 
 toggleIcon(index: number) {
   this.isOpen[index] = !this.isOpen[index];
