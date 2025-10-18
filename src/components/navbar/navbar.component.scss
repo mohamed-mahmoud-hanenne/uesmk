@@ -85,3 +85,13 @@
   background: #007bff;
   color: #fff;
 }
+
+
+.active-link{
+  // background-color: blue !important; /* Or your desired background color */
+  // border-color: blue !important; /* Match border if needed */
+  // color: white !important; /* Or your desired text color */
+
+  border-bottom: 2px solid blue; /* Adjust color and thickness as desired */
+  padding-bottom: 2px; /* Add some space between text and underline */
+}
