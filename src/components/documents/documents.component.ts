@@ -28,7 +28,7 @@ export class DocumentsComponent {
     showList(title: string, items: string[]) {
     const htmlList = `
       <ul style="text-align: left; font-size: 0.95rem; line-height: 1.6; margin-left: 10px;">
-        ${items.map(i => `<li style="margin-bottom: 8px;"><i class='bi bi-check-circle-fill text-success me-2'></i>${i}</li>`).join('')}
+        ${items.map(i => `<p style="margin-bottom: 8px;"><i class='bi bi-check-circle-fill text-success me-2'></i>${i}</p>`).join('')}
       </ul>
     `;
 
