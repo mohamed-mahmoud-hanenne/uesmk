@@ -1,0 +1,27 @@
+{
+  "header": {
+    "title": "Bienvenue dans le site officiel du UESMK",
+    "subtitle": "L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK)",
+    "contactBtn": "Contact",
+    "readMoreBtn": "Lire plus"
+  },
+  "actus": {
+    "title": "Actualités",
+    "card1": {
+      "title": "Documents de séjour",
+      "desc": "Liste des documents nécessaires pour le renouvellement de votre titre de séjour étudiant.",
+      "seeMore": "Voir plus"
+    },
+    "card2": {
+      "title": "Renouvellement de la bourse AMCI",
+      "desc": "Documents requis pour le renouvellement annuel de votre bourse AMCI.",
+      "seeMore": "Voir plus"
+    }
+  },
+  "events": {
+    "title": "Nos Événements",
+    "lead": "Cliquez sur Suivant / Précédent pour voir les autres événements.",
+    "prev": "Précédent",
+    "next": "Suivant"
+  }
+}
