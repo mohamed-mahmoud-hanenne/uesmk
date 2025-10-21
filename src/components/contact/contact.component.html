@@ -1,13 +1,19 @@
 <div class="container mt-5">
-  <h2 class="text-center mb-4">Contactez Nous</h2>
+  <h2 class="text-center mb-4">{{ 'contact.title' | translate }}</h2>
 
   <div class="card p-4 shadow-sm contact-card text-center">
-    <p><strong>Email :</strong> <a [href]="'mailto:' + email">{{ email }}</a></p>
-    <p><strong>Téléphone :</strong> {{ telephone }}</p>
+    <p>
+      <strong>{{ 'contact.email' | translate }} :</strong> 
+      <a [href]="'mailto:' + email">{{ email }}</a>
+    </p>
+    <p>
+      <strong>{{ 'contact.phone' | translate }} :</strong> 
+      {{ telephone }}
+    </p>
 
     <!-- Bouton WhatsApp -->
     <button class="btn btn-success mb-3" (click)="openWhatsApp()">
-      <i class="bi bi-whatsapp"></i> Discuter sur WhatsApp
+      <i class="bi bi-whatsapp"></i> {{ 'contact.btnWhatsApp' | translate }}
     </button>
 
     <!-- Réseaux sociaux -->
@@ -16,7 +22,8 @@
          [attr.href]="social.url"
          target="_blank"
          class="social-icon"
-         [ngClass]="social.name.toLowerCase()">
+         [ngClass]="social.name.toLowerCase()"
+         [attr.aria-label]="social.name">
         <i [class]="social.icon"></i>
       </a>
     </div>

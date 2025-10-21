@@ -1,10 +1,10 @@
 <div class="container mt-5">
   <!-- Description -->
-  <h2 class="text-center mb-4">À propos de l'UESMK</h2>
+  <h2 class="text-center mb-4">{{ 'team.aboutTitle' | translate }}</h2>
   <p class="lead text-center">{{ description }}</p>
 
   <!-- Équipe -->
-  <h3 class="text-center mt-5 mb-4">Notre Équipe</h3>
+  <h3 class="text-center mt-5 mb-4">{{ 'team.teamTitle' | translate }}</h3>
   
   <div class="row g-4 justify-content-center">
     <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let membre of equipe">
@@ -12,7 +12,7 @@
         <img 
           [src]="membre.image" 
           class="card-img-top team-img img-fluid" 
-          alt="{{ membre.nom }}"
+          [alt]="membre.nom"
         >
         <div class="card-body">
           <h5 class="card-title">{{ membre.nom }}</h5>

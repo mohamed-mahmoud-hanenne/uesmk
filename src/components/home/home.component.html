@@ -5,11 +5,15 @@
     <div class="row gx-5 justify-content-center">
       <div class="col-lg-6">
         <div class="text-center my-5">
-          <h1 class="display-5 fw-bolder text-white mb-2">Bienvenue dans le site officiel du UESMK</h1>
-          <p class="lead text-white-50 mb-4">L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK)</p>
+          <h1 class="display-5 fw-bolder text-white mb-2">{{ 'home.header.title' | translate }}</h1>
+          <p class="lead text-white-50 mb-4">{{ 'home.header.subtitle' | translate }}</p>
           <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-            <a class="btn btn-danger btn-lg px-4 me-sm-3" routerLink="/contact">Contact</a>
-            <a class="btn btn-warning btn-lg px-4" routerLink="/equipes">Lire plus</a>
+            <a class="btn btn-danger btn-lg px-4 me-sm-3" routerLink="/contact">
+              {{ 'home.header.btnContact' | translate }}
+            </a>
+            <a class="btn btn-warning btn-lg px-4" routerLink="/equipes">
+              {{ 'home.header.btnReadMore' | translate }}
+            </a>
           </div>
         </div>
       </div>
@@ -20,85 +24,46 @@
 <!-- Features section-->
 <section class="py-5 border-bottom section-actus" id="features">
   <div class="container px-5 my-5">
-    <h1 class="text-center fw-bold mb-5 text-success">Actualités</h1>
+    <h1 class="text-center fw-bold mb-5 text-success">{{ 'home.news.title' | translate }}</h1>
 
     <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
 
- 
-
-
-
-    </div>
-
-         <!-- Carte 1 : Documents de séjour -->
+      <!-- Carte 1 : Documents de séjour -->
       <div class="col mb-5">
         <div class="card actus-card h-100 text-center border-0">
           <div class="card-body p-4">
             <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
               <i class="bi bi-house-door"></i>
             </div>
-            <h2 class="fs-5 fw-bold">Documents de séjour</h2>
-            <p class="text-muted mb-3">Liste des documents nécessaires pour le renouvellement de votre titre de séjour étudiant.</p>
+            <h2 class="fs-5 fw-bold">{{ 'home.news.residence.title' | translate }}</h2>
+            <p class="text-muted mb-3">{{ 'home.news.residence.description' | translate }}</p>
 
             <button class="btn btn-outline-success"
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#docsSejour"
-                    aria-expanded="false"
-                    aria-controls="docsSejour"
-                    (click)="toggleIcon(1)">
-              Voir plus
-              <i [ngClass]="{'bi bi-chevron-down': !isOpen[1], 'bi bi-chevron-up': isOpen[1]}"></i>
+                    (click)="showList('home.news.residence.title', 'home.news.residence')">
+              {{ 'home.news.residence.btnMore' | translate }}
+              <i class="bi bi-chevron-right ms-1"></i>
             </button>
-
-            <div class="collapse mt-3" id="docsSejour">
-              <ul class="list-group list-group-flush text-start">
-                <li class="list-group-item">Copie de la page contenant la preuve d'identité (certifiée conforme).</li>
-                <li class="list-group-item">Copie de la page contenant la dernière entrée au Maroc (certifiée conforme).</li>
-                <li class="list-group-item">Copie de la page contenant le dernier visa (certifiée conforme).</li>
-                <li class="list-group-item">Contrat de location ou certificat de propriété immobilière, ou copie certifiée conforme de l'un des deux.</li>
-                <li class="list-group-item">Casier judicaire.</li>
-                <li class="list-group-item">Attestation d'inscription dans une université ou un institut reconnu, ou copie certifiée conforme de l'un des deux.</li>
-                <li class="list-group-item">Huit photos d'identité.</li>
-                <li class="list-group-item">Certificat de prise en charge délivré par l'ambassade, ou attestation de bourse.</li>
-                <li class="list-group-item">Certificat médical signé par un médecin marocain ou un médecin étranger au Maroc.</li>
-                <li class="list-group-item">Attestation de conformité du nom (si le nom du père figure dans le casier judiciaire).</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
 
-          <!-- Carte 2 : Renouvellement de la bourse AMCI -->
+      <!-- Carte 2 : Renouvellement de la bourse AMCI -->
       <div class="col mb-5">
         <div class="card actus-card h-100 text-center border-0">
           <div class="card-body p-4">
             <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
               <i class="bi bi-bank"></i>
             </div>
-            <h2 class="fs-5 fw-bold">Renouvellement de la bourse AMCI</h2>
-            <p class="text-muted mb-3">Documents requis pour le renouvellement annuel de votre bourse AMCI.</p>
+            <h2 class="fs-5 fw-bold">{{ 'home.news.scholarship.title' | translate }}</h2>
+            <p class="text-muted mb-3">{{ 'home.news.scholarship.description' | translate }}</p>
 
             <button class="btn btn-outline-success"
                     type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#docsBourse"
-                    aria-expanded="false"
-                    aria-controls="docsBourse"
-                    (click)="toggleIcon(2)">
-              Voir plus
-              <i [ngClass]="{'bi bi-chevron-down': !isOpen[2], 'bi bi-chevron-up': isOpen[2]}"></i>
+                    (click)="showList('home.news.scholarship.title', 'home.news.scholarship')">
+              {{ 'home.news.scholarship.btnMore' | translate }}
+              <i class="bi bi-chevron-right ms-1"></i>
             </button>
-
-            <div class="collapse mt-3" id="docsBourse">
-              <ul class="list-group list-group-flush text-start">
-                <li class="list-group-item">Relevé de notes de l’année précédente.</li>
-                <li class="list-group-item">Attestation de scolarité pour l’année en cours.</li>
-                <li class="list-group-item">Lettre de demande de renouvellement signée par coordinateur master (si les relevés n'est pas disponible).</li>
-                <li class="list-group-item">Copie du passeport.</li>
-                <li class="list-group-item">Formualire de régularisation.</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -110,10 +75,10 @@
             <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
               <i class="bi bi-link-45deg"></i>
             </div>
-            <h2 class="fs-5 fw-bold">Code de bourse AMCI (CESAM)</h2>
-            <p class="text-muted mb-4">Accédez au site CESAM pour récupérer ou vérifier votre code de bourse AMCI.</p>
+            <h2 class="fs-5 fw-bold">{{ 'home.news.cesam.title' | translate }}</h2>
+            <p class="text-muted mb-4">{{ 'home.news.cesam.description' | translate }}</p>
             <a href="https://cesamcentrale.org/code-de-bourse/" target="_blank" class="btn btn-success">
-              Accéder au site CESAM <i class="bi bi-arrow-right"></i>
+              {{ 'home.news.cesam.btnAccess' | translate }} <i class="bi bi-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -126,30 +91,25 @@
             <div class="feature bg-success text-white rounded-3 mb-4 mt-n4">
               <i class="bi bi-ui-checks-grid"></i>
             </div>
-            <h2 class="fs-5 fw-bold">Formulaire de logement</h2>
-            <p class="text-muted mb-4">Remplissez le formulaire Google pour soumettre vos informations à l’association.</p>
+            <h2 class="fs-5 fw-bold">{{ 'home.news.housing.title' | translate }}</h2>
+            <p class="text-muted mb-4">{{ 'home.news.housing.description' | translate }}</p>
             <a href="https://forms.gle/Udguxnu8fMExiTjw6" target="_blank" class="btn btn-success">
-              Ouvrir le formulaire <i class="bi bi-arrow-right"></i>
+              {{ 'home.news.housing.btnOpen' | translate }} <i class="bi bi-arrow-right"></i>
             </a>
           </div>
         </div>
       </div>
 
+    </div>
   </div>
 </section>
-
-
-
-
 
 <!-- Événements section -->
 <section class="py-5" id="events-carousel">
   <div class="container px-5 my-5">
     <div class="text-center mb-4">
-      <h2 class="fw-bolder text-success">Nos Événements</h2>
-      <p class="lead text-muted">
-        Cliquez sur <strong>Suivant</strong> / <strong>Précédent</strong> pour voir les autres événements.
-      </p>
+      <h2 class="fw-bolder text-success">{{ 'home.events.title' | translate }}</h2>
+      <p class="lead text-muted" [innerHTML]="'home.events.subtitle' | translate"></p>
     </div>
 
     <div class="events-carousel mx-auto">
@@ -159,7 +119,7 @@
             <img 
               [src]="src" 
               (error)="onImgError($event)" 
-              [alt]="'Événement ' + (currentIndex + i + 1)" 
+              [alt]="('home.events.altEvent' | translate) + ' ' + (currentIndex + i + 1)" 
               class="img-fluid rounded shadow-sm"
             >
           </div>
@@ -171,13 +131,12 @@
 
       <div class="controls d-flex justify-content-center gap-3 mt-4">
         <button class="btn btn-outline-success px-4" (click)="prev()" [disabled]="isPrevDisabled()">
-          <i class="bi bi-chevron-left"></i> Précédent
+          <i class="bi bi-chevron-left"></i> {{ 'home.events.btnPrev' | translate }}
         </button>
         <button class="btn btn-success px-4" (click)="next()" [disabled]="isNextDisabled()">
-          Suivant <i class="bi bi-chevron-right"></i>
+          {{ 'home.events.btnNext' | translate }} <i class="bi bi-chevron-right"></i>
         </button>
       </div>
     </div>
   </div>
 </section>
-

@@ -1,180 +1,140 @@
 <header class="py-5">
-    <div class="container px-lg-5 test">
-        <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-            <div class="m-4 doc">
-                <h1 class="display-5 fw-bold">Documents</h1>
-                <!-- <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has
-                    been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                <a class="btn btn-primary btn-lg" href="#!">Call to action</a> -->
-            </div>
-        </div>
+  <div class="container px-lg-5 test">
+    <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+      <div class="m-4 doc">
+        <h1 class="display-5 fw-bold">{{ 'documents.title' | translate }}</h1>
+      </div>
     </div>
+  </div>
 </header>
 
 <section class="pt-4">
   <div class="container px-lg-5">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-lg-5">
 
-      <!-- 1 -->
+      <!-- 1. Documents de séjour -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-file-earmark-text"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Documents de séjour</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.residence.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Documents de séjour', [
-                'Copie de la page contenant la preuve d\'identité (certifiée conforme)',
-                'Copie de la page contenant la dernière entrée au Maroc (certifiée conforme)',
-                'Copie du visa (certifiée conforme)',
-                'Contrat de location ou certificat de propriété',
-                'Casier judiciaire',
-                'Attestation d’inscription universitaire',
-                '8 photos d’identité',
-                'Certificat de prise en charge',
-                'Certificat médical signé au Maroc',
-                'Attestation de conformité du nom'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.residence.title', 'documents.cards.residence.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 2 -->
+      <!-- 2. Laisser passer -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi bi-airplane"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Laisser passer</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.laissezPasser.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Laisser passer', [
-                'Copie du passeport avec le cachet de la dernière entrée',
-                'Copie du visa et de la carte de séjour si disponibles',
-                'Détermination de la date du voyage'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.laissezPasser.title', 'documents.cards.laissezPasser.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 3 -->
+      <!-- 3. Prise en charge -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-person-badge"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Prise en charge</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.priseEnCharge.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Prise en charge', [
-                'Copie du passeport',
-                'Copie de l’attestation d’inscription'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.priseEnCharge.title', 'documents.cards.priseEnCharge.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 4 -->
+      <!-- 4. Lettre d'excuse -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-clipboard-x"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Lettre d'excuse</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.lettreExcuse.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Lettre d\'excuse', [
-                'Copie du passeport avec le cachet de la dernière entrée',
-                'Copie du visa et de la carte de séjour si disponibles',
-                'Contrat de location',
-                'Attestation d’inscription',
-                'Numéro de téléphone'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.lettreExcuse.title', 'documents.cards.lettreExcuse.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 5 -->
+      <!-- 5. Attestation de conformité de nom -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-shield-check"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Attestation de conformité de nom</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.conformiteNom.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Attestation de conformité de nom', [
-                'Copies des documents requis et correspondance entre eux'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.conformiteNom.title', 'documents.cards.conformiteNom.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 6 -->
+      <!-- 6. Procuration -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-pencil-square"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Procuration</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.procuration.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Procuration', [
-                'Copie du passeport du mandant et du mandataire avec attestation d’inscription du premier'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.procuration.title', 'documents.cards.procuration.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 7 -->
+      <!-- 7. Renouvellement de la bourse de l'état -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-cash-coin"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Renouvellement de la bourse de l'état</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.bourseEtat.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Renouvellement de la bourse de l’état', [
-                'Copie du passeport',
-                'Copie de l’attestation d’inscription',
-                'Copie des relevés de notes de l’année précédente'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.bourseEtat.title', 'documents.cards.bourseEtat.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 8 -->
+      <!-- 8. Renouvellement de la bourse AMCI -->
       <div class="col mb-5">
         <div class="card bg-light border-0 h-100">
           <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
             <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4">
               <i class="bi-bank"></i>
             </div>
-            <h2 class="fs-4 fw-bold">Renouvellement de la bourse AMCI</h2>
+            <h2 class="fs-4 fw-bold">{{ 'documents.cards.bourseAmci.title' | translate }}</h2>
             <button class="btn btn-outline-success mt-2"
-              (click)="showList('Renouvellement de la bourse AMCI', [
-                'Copie du passeport',
-                'Copie de l’attestation d’inscription',
-                'Copie des relevés de notes de l’année précédente',
-                'Retrait du formulaire et le joindre au dossier'
-              ])">
-              Voir plus <i class="bi bi-chevron-right ms-1"></i>
+              (click)="showList('documents.cards.bourseAmci.title', 'documents.cards.bourseAmci.items')">
+              {{ 'documents.btnViewMore' | translate }} <i class="bi bi-chevron-right ms-1"></i>
             </button>
           </div>
         </div>
@@ -183,4 +143,3 @@
     </div>
   </div>
 </section>
-

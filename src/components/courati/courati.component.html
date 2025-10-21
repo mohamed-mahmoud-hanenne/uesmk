@@ -1,36 +1,38 @@
 <div class="container mt-5">
-  <h2 class="text-center mb-4">Cours - UESMK</h2>
+  <h2 class="text-center mb-4">{{ 'courati.title' | translate }}</h2>
 
   <!-- Choix établissement -->
   <div class="mb-4">
-    <label class="form-label fw-bold">1️⃣ Choisir un établissement</label>
+    <label class="form-label fw-bold">{{ 'courati.step1' | translate }}</label>
     <select class="form-select" [(ngModel)]="etabChoisi" (change)="formationChoisie=null; filiereChoisie=null">
-      <option [ngValue]="null">-- Sélectionner --</option>
+      <option [ngValue]="null">{{ 'courati.selectPlaceholder' | translate }}</option>
       <option *ngFor="let e of etablissements" [ngValue]="e">{{ e.nom }}</option>
     </select>
   </div>
 
   <!-- Choix formation -->
   <div class="mb-4" *ngIf="etabChoisi">
-    <label class="form-label fw-bold">2️⃣ Choisir le type de formation</label>
+    <label class="form-label fw-bold">{{ 'courati.step2' | translate }}</label>
     <select class="form-select" [(ngModel)]="formationChoisie" (change)="filiereChoisie=null">
-      <option [ngValue]="null">-- Sélectionner --</option>
+      <option [ngValue]="null">{{ 'courati.selectPlaceholder' | translate }}</option>
       <option *ngFor="let f of etabChoisi.formations" [ngValue]="f">{{ f.type }}</option>
     </select>
   </div>
 
   <!-- Choix filière -->
   <div class="mb-4" *ngIf="formationChoisie">
-    <label class="form-label fw-bold">3️⃣ Choisir la filière</label>
+    <label class="form-label fw-bold">{{ 'courati.step3' | translate }}</label>
     <select class="form-select" [(ngModel)]="filiereChoisie">
-      <option [ngValue]="null">-- Sélectionner --</option>
+      <option [ngValue]="null">{{ 'courati.selectPlaceholder' | translate }}</option>
       <option *ngFor="let fil of formationChoisie.filieres" [ngValue]="fil">{{ fil.nom }}</option>
     </select>
   </div>
 
   <!-- Bouton -->
   <div class="text-center" *ngIf="filiereChoisie">
-    <button class="btn btn-success px-4" (click)="ouvrirDrive()">📂 Ouvrir le Drive</button>
+    <button class="btn btn-success px-4" (click)="ouvrirDrive()">
+      {{ 'courati.btnOpenDrive' | translate }}
+    </button>
   </div>
 </div>
 <br><br><br><br><br><br><br>

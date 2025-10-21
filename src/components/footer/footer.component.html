@@ -3,10 +3,12 @@
   <!-- Social media -->
   <section class="footer-social d-flex justify-content-center justify-content-lg-between px-4 pb-4">
     <div>
-      <a href="https://www.facebook.com/uesmk" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com/uesmk" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/uesmk" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/company/uesmk" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a *ngFor="let social of socialLinks" 
+         [href]="social.url" 
+         target="_blank"
+         [attr.aria-label]="social.name">
+        <i [class]="social.icon"></i>
+      </a>
     </div>
   </section>
 
@@ -17,30 +19,43 @@
 
         <!-- About -->
         <div class="col-md-4 mb-4">
-          <h6 class="fw-bold mb-4"><i class="fas fa-graduation-cap me-2"></i>UESMK</h6>
-          <p>
-            L’Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) est une organisation qui vise à rassembler,
-            soutenir et représenter les étudiants et stagiaires mauritaniens à Kénitra.
-          </p>
+          <h6 class="fw-bold mb-4">
+            <i class="fas fa-graduation-cap me-2"></i>{{ 'footer.about.title' | translate }}
+          </h6>
+          <p>{{ 'footer.about.description' | translate }}</p>
         </div>
 
         <!-- Liens utiles -->
         <div class="col-md-4 mb-4">
-          <h6 class="fw-bold mb-4">Liens utiles</h6>
+          <h6 class="fw-bold mb-4">{{ 'footer.usefulLinks.title' | translate }}</h6>
           <ul class="list-unstyled">
-            <li><a routerLink="/universite">Établissements</a></li>
-            <li><a routerLink="/activites">Activités</a></li>
-            <li><a routerLink="/courati">Cours</a></li>
-            <li><a routerLink="/contact">Contact</a></li>
+            <li>
+              <a routerLink="/universite">{{ 'footer.usefulLinks.establishments' | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/activites">{{ 'footer.usefulLinks.activities' | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/courati">{{ 'footer.usefulLinks.courses' | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/contact">{{ 'footer.usefulLinks.contact' | translate }}</a>
+            </li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div class="col-md-4 mb-4">
-          <h6 class="fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-2"></i> Kénitra, Maroc</p>
-          <p><i class="fas fa-envelope me-2"></i>uesmmk&#64;gmail.com</p>
-          <p><i class="fas fa-phone me-2"></i> +222 27 80 03 79</p>
+          <h6 class="fw-bold mb-4">{{ 'footer.contact.title' | translate }}</h6>
+          <p>
+            <i class="fas fa-home me-2"></i>{{ 'footer.contact.location' | translate }}
+          </p>
+          <p>
+            <i class="fas fa-envelope me-2"></i>{{ 'footer.contact.email' | translate }}
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>{{ 'footer.contact.phone' | translate }}
+          </p>
         </div>
 
       </div>
@@ -49,6 +64,6 @@
 
   <!-- Copyright -->
   <div class="footer-bottom text-center py-3 mt-4">
-    © 2025 Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) - Tous droits réservés - by Hanenne
+    {{ 'footer.copyright' | translate }}
   </div>
 </footer>

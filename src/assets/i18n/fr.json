@@ -1,0 +1,357 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "documents": "Documents",
+    "universite": "Université",
+    "activites": "Activités",
+    "courati": "Courati",
+    "equipes": "À propos UESMK",
+    "contact": "Contact"
+  },
+  "home": {
+    "header": {
+      "title": "Bienvenue dans le site officiel du UESMK",
+      "subtitle": "L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK)",
+      "btnContact": "Contact",
+      "btnReadMore": "Lire plus"
+    },
+    "news": {
+      "title": "Actualités",
+      "residence": {
+        "title": "Documents de séjour",
+        "description": "Liste des documents nécessaires pour le renouvellement de votre titre de séjour étudiant.",
+        "btnMore": "Voir plus",
+        "doc1": "Copie de la page contenant la preuve d'identité (certifiée conforme).",
+        "doc2": "Copie de la page contenant la dernière entrée au Maroc (certifiée conforme).",
+        "doc3": "Copie de la page contenant le dernier visa (certifiée conforme).",
+        "doc4": "Contrat de location ou certificat de propriété immobilière, ou copie certifiée conforme de l'un des deux.",
+        "doc5": "Casier judicaire.",
+        "doc6": "Attestation d'inscription dans une université ou un institut reconnu, ou copie certifiée conforme de l'un des deux.",
+        "doc7": "Huit photos d'identité.",
+        "doc8": "Certificat de prise en charge délivré par l'ambassade, ou attestation de bourse.",
+        "doc9": "Certificat médical signé par un médecin marocain ou un médecin étranger au Maroc.",
+        "doc10": "Attestation de conformité du nom (si le nom du père figure dans le casier judiciaire)."
+      },
+      "scholarship": {
+        "title": "Renouvellement de la bourse AMCI",
+        "description": "Documents requis pour le renouvellement annuel de votre bourse AMCI.",
+        "btnMore": "Voir plus",
+        "doc1": "Relevé de notes de l'année précédente.",
+        "doc2": "Attestation de scolarité pour l'année en cours.",
+        "doc3": "Lettre de demande de renouvellement signée par coordinateur master (si les relevés n'est pas disponible).",
+        "doc4": "Copie du passeport.",
+        "doc5": "Formualire de régularisation."
+      },
+      "cesam": {
+        "title": "Code de bourse AMCI (CESAM)",
+        "description": "Accédez au site CESAM pour récupérer ou vérifier votre code de bourse AMCI.",
+        "btnAccess": "Accéder au site CESAM"
+      },
+      "housing": {
+        "title": "Formulaire de logement",
+        "description": "Remplissez le formulaire Google pour soumettre vos informations à l'association.",
+        "btnOpen": "Ouvrir le formulaire"
+      }
+    },
+    "events": {
+      "title": "Nos Événements",
+      "subtitle": "Cliquez sur <strong>Suivant</strong> / <strong>Précédent</strong> pour voir les autres événements.",
+      "btnPrev": "Précédent",
+      "btnNext": "Suivant",
+      "altEvent": "Événement"
+    }
+  },
+
+    "documents": {
+    "title": "Documents",
+    "btnViewMore": "Voir plus",
+    "btnClose": "Fermer",
+    "cards": {
+      "residence": {
+        "title": "Documents de séjour",
+        "items": [
+          "Copie de la page contenant la preuve d'identité (certifiée conforme)",
+          "Copie de la page contenant la dernière entrée au Maroc (certifiée conforme)",
+          "Copie du visa (certifiée conforme)",
+          "Contrat de location ou certificat de propriété",
+          "Casier judiciaire",
+          "Attestation d'inscription universitaire",
+          "8 photos d'identité",
+          "Certificat de prise en charge",
+          "Certificat médical signé au Maroc",
+          "Attestation de conformité du nom"
+        ]
+      },
+      "laissezPasser": {
+        "title": "Laisser passer",
+        "items": [
+          "Copie du passeport avec le cachet de la dernière entrée",
+          "Copie du visa et de la carte de séjour si disponibles",
+          "Détermination de la date du voyage"
+        ]
+      },
+      "priseEnCharge": {
+        "title": "Prise en charge",
+        "items": [
+          "Copie du passeport",
+          "Copie de l'attestation d'inscription"
+        ]
+      },
+      "lettreExcuse": {
+        "title": "Lettre d'excuse",
+        "items": [
+          "Copie du passeport avec le cachet de la dernière entrée",
+          "Copie du visa et de la carte de séjour si disponibles",
+          "Contrat de location",
+          "Attestation d'inscription",
+          "Numéro de téléphone"
+        ]
+      },
+      "conformiteNom": {
+        "title": "Attestation de conformité de nom",
+        "items": [
+          "Copies des documents requis et correspondance entre eux"
+        ]
+      },
+      "procuration": {
+        "title": "Procuration",
+        "items": [
+          "Copie du passeport du mandant et du mandataire avec attestation d'inscription du premier"
+        ]
+      },
+      "bourseEtat": {
+        "title": "Renouvellement de la bourse de l'état",
+        "items": [
+          "Copie du passeport",
+          "Copie de l'attestation d'inscription",
+          "Copie des relevés de notes de l'année précédente"
+        ]
+      },
+      "bourseAmci": {
+        "title": "Renouvellement de la bourse AMCI",
+        "items": [
+          "Copie du passeport",
+          "Copie de l'attestation d'inscription",
+          "Copie des relevés de notes de l'année précédente",
+          "Retrait du formulaire et le joindre au dossier"
+        ]
+      }
+    }
+  },
+
+    "universite": {
+    "title": "Université Ibn Tofail",
+    "btnDetails": "Voir détails",
+    "btnOfficialSite": "Site officiel",
+    "establishments": [
+      {
+        "name": "Université Ibn Tofail",
+        "description": "Université publique à Kénitra"
+      },
+      {
+        "name": "ENSC Ecole Nationale Supérieure de Chimie Kénitra",
+        "description": "ENSC Kénitra"
+      },
+      {
+        "name": "EST Kénitra",
+        "description": "École Supérieure de Technologie de Kénitra"
+      },
+      {
+        "name": "ENSA École Nationale des Sciences Appliquées de Kénitra",
+        "description": "ENSA Kénitra"
+      },
+      {
+        "name": "ENCG École Nationale de Commerce et de Gestion de Kénitra",
+        "description": "ENCG Kénitra"
+      },
+      {
+        "name": "FS Faculté des Sciences de Kénitra",
+        "description": "FS Kénitra"
+      },
+      {
+        "name": "Faculté des Langues des Lettres et des Arts",
+        "description": "Faculté des Langues des Lettres et des Arts"
+      },
+      {
+        "name": "Faculté des Sciences Humaines et Sociales",
+        "description": "Faculté des Sciences Humaines et Sociales"
+      },
+      {
+        "name": "Faculté d'Economie et de Gestion",
+        "description": "Faculté d'Economie et de Gestion"
+      },
+      {
+        "name": "Faculté des Sciences Juridiques et Politiques",
+        "description": "Faculté des Sciences Juridiques et Politiques"
+      },
+      {
+        "name": "Ecole Supérieure d'Education et de Formation",
+        "description": "Ecole Supérieure d'Education et de Formation"
+      },
+      {
+        "name": "Institut des Métiers de Sport",
+        "description": "Institut des Métiers de Sport"
+      }
+    ]
+  },
+
+    "activities": {
+    "title": "Activités",
+    "btnDetails": "Voir détails",
+    "items": [
+      {
+        "title": "Tournois sportif",
+        "description": "Tournois sportif pour étudiants mauritaniens à Kénitra."
+      },
+      {
+        "title": "Soirée d'excellence & Eid al Adhaa",
+        "description": "Soirée d'excellence & Eid al Adhaa pour célébrer les meilleurs étudiants."
+      },
+      {
+        "title": "Kénitra Mauri League",
+        "description": "Compétition sportive entre les étudiants mauritaniens de Kénitra."
+      },
+      {
+        "title": "Fête de l'indépendance 2024",
+        "description": "Fête de l'indépendance 2024 à Kénitra pour les étudiants mauritaniens."
+      },
+      {
+        "title": "Participation au MCF par AISEC",
+        "description": "Participation des étudiants mauritaniens au MCF organisé par AISEC."
+      },
+      {
+        "title": "Ifrane trip",
+        "description": "Voyage touristique à Ifrane pour découvrir la beauté de la région."
+      },
+      {
+        "title": "Mini CAN CESAM 2025",
+        "description": "Mini CAN CESAM 2025 - Tournoi de football inter-associations."
+      },
+      {
+        "title": "Eid al Fitr 2025",
+        "description": "Célébration de l'Eid al Fitr 2025 avec les étudiants mauritaniens."
+      },
+      {
+        "title": "Soirée d'excellence 2ème édition & Eid al Adhaa",
+        "description": "Deuxième édition de la soirée d'excellence avec célébration de l'Eid al Adhaa."
+      }
+    ]
+  },
+
+  "courati": {
+    "title": "Cours - UESMK",
+    "step1": "Choisir un établissement",
+    "step2": "Choisir le type de formation",
+    "step3": "Choisir la filière",
+    "selectPlaceholder": "-- Sélectionner --",
+    "btnOpenDrive": "📂 Ouvrir le Drive",
+    "establishments": [
+      {
+        "name": "Faculté des Sciences",
+        "formations": [
+          {
+            "type": "Licence",
+            "filieres": [
+              { "name": "Mathématiques" },
+              { "name": "Informatique" }
+            ]
+          },
+          {
+            "type": "Master",
+            "filieres": [
+              { "name": "Physique" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "École Nationale des Sciences Appliquées (ENSA)",
+        "formations": [
+          {
+            "type": "Prepa",
+            "filieres": [
+              { "name": "Génie Informatique" },
+              { "name": "Génie Civil" }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "École Nationale de Commerce et de Gestion (ENCG)",
+        "formations": [
+          {
+            "type": "Prepa",
+            "filieres": [
+              { "name": "Comptabilité" },
+              { "name": "Marketing" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+
+    "team": {
+    "aboutTitle": "À propos de l'UESMK",
+    "description": "L'Union des Étudiants et Stagiaires Mauritaniens (UESM) est une organisation estudiantine créée en 1997 à Rabat. Elle a pour mission principale d'accompagner les étudiants et stagiaires mauritaniens dans leur parcours académique et social au Maroc, en favorisant leur intégration, en défendant leurs intérêts et en organisant diverses activités scientifiques, culturelles et associatives. Afin de rapprocher ses actions des étudiants, l'Union est structurée en sections locales dans plusieurs villes universitaires marocaines. La section de Kénitra, fondée il y a plus de treize ans, poursuit les mêmes missions et incarne les mêmes valeurs que l'Union centrale, tout en les adaptant aux besoins spécifiques des étudiants et stagiaires mauritaniens installés dans la ville de Kénitra.",
+    "teamTitle": "Notre Équipe",
+    "members": [
+      {
+        "name": "Elhadj Hamed",
+        "position": "Secrétaire général"
+      },
+      {
+        "name": "Khattary Amar Ould Baba",
+        "position": "Secrétaire général adjoint"
+      },
+      {
+        "name": "Eboulabass Ennahoui",
+        "position": "Responsable de l'information et de la formation"
+      },
+      {
+        "name": "Mohamed Mahmoud Hanenne",
+        "position": "Responsable des relations extérieures et des affaires académiques"
+      },
+      {
+        "name": "Kaber Sidi",
+        "position": "Responsable des finances et des affaires sociales"
+      },
+      {
+        "name": "Mariem Taleb",
+        "position": "Responsable de l'organisation et de la culture"
+      }
+    ]
+  },
+
+
+  "contact": {
+    "title": "Contactez Nous",
+    "email": "Email",
+    "phone": "Téléphone",
+    "btnWhatsApp": "Discuter sur WhatsApp",
+    "socialTitle": "Suivez-nous"
+  },
+
+    "footer": {
+    "about": {
+      "title": "UESMK",
+      "description": "L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) est une organisation qui vise à rassembler, soutenir et représenter les étudiants et stagiaires mauritaniens à Kénitra."
+    },
+    "usefulLinks": {
+      "title": "Liens utiles",
+      "establishments": "Établissements",
+      "activities": "Activités",
+      "courses": "Cours",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "location": "Kénitra, Maroc",
+      "email": "uesmmk@gmail.com",
+      "phone": "+222 27 80 03 79"
+    },
+    "copyright": "© 2025 Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) - Tous droits réservés - by Hanenne"
+  }
+
+}

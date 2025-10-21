@@ -1,13 +1,17 @@
 <div class="container mt-4">
-  <h2 class="text-center mb-4">Université Ibn Tofail</h2>
+  <h2 class="text-center mb-4">{{ 'universite.title' | translate }}</h2>
   <div class="row">
     <div class="col-md-4" *ngFor="let etab of etablissements">
       <div class="card shadow-lg mb-4">
         <div class="card-body">
           <h5 class="card-title">{{ etab.nom }}</h5>
           <p class="card-text">{{ etab.description }}</p>
-          <a [routerLink]="etab.details" class="btn btn-primary me-2">Voir détails</a>
-          <a [href]="etab.lien" target="_blank" class="btn btn-success">Site officiel</a>
+          <a [routerLink]="etab.details" class="btn btn-primary me-2">
+            {{ 'universite.btnDetails' | translate }}
+          </a>
+          <a [href]="etab.lien" target="_blank" class="btn btn-success">
+            {{ 'universite.btnOfficialSite' | translate }}
+          </a>
         </div>
       </div>
     </div>

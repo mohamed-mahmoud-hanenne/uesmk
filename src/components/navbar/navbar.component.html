@@ -1,29 +1,29 @@
 <nav class="navbar navbar-expand-lg modern-navbar fixed-top">
   <div class="container-fluid px-5">
-    <!-- Logo + nom -->
     <a class="navbar-brand d-flex align-items-center fw-bold fs-4" routerLink="home">
       <img src="favicons.ico" alt="USEMK Logo" class="logo-img me-2">
       UESMK
     </a>
 
-    <!-- Toggle menu mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" routerLink="">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="documents" routerLinkActive="active-link">Documents</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="universite" routerLinkActive="active-link">Université</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="activites" routerLinkActive="active-link">Activités</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="courati" routerLinkActive="active-link">Courati</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="equipes" routerLinkActive="active-link">À propos UESMK</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="">{{ 'navbar.home' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="documents" routerLinkActive="active-link">{{ 'navbar.documents' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="universite" routerLinkActive="active-link">{{ 'navbar.universite' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="activites" routerLinkActive="active-link">{{ 'navbar.activites' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="courati" routerLinkActive="active-link">{{ 'navbar.courati' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="equipes" routerLinkActive="active-link">{{ 'navbar.equipes' | translate }}</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="contact" routerLinkActive="active-link">{{ 'navbar.contact' | translate }}</a></li>
+        
         <li class="nav-item ms-lg-3">
-          <button class="btn btn-modern px-3">Arabe</button>
+          <button class="btn btn-modern px-3" (click)="toggleLanguage()">
+            {{ currentLang === 'fr' ? 'العربية' : 'Français' }}
+          </button>
         </li>
 
         <li class="nav-item ms-lg-2">
