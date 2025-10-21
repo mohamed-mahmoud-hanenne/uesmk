@@ -9,17 +9,27 @@
 // };
 
 
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom, Inject, PLATFORM_ID } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient } from '@angular/common/http';
+import { isPlatformBrowser } from '@angular/common';
+import { of } from 'rxjs';
 
 import { routes } from './app.routes';
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
+// ✅ Correction pour SSR : gestion du chargement côté serveur
+export function HttpLoaderFactory(http: HttpClient, platformId: Object): TranslateLoader {
+  if (isPlatformBrowser(platformId)) {
+    // Côté navigateur → charger normalement les fichiers JSON
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  } else {
+    // Côté serveur → éviter l'erreur en renvoyant un loader vide
+    return {
+      getTranslation: () => of({})
+    } as TranslateLoader;
+  }
 }
 
 export const appConfig: ApplicationConfig = {
@@ -32,7 +42,7 @@ export const appConfig: ApplicationConfig = {
         loader: {
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
+          deps: [HttpClient, PLATFORM_ID]
         }
       })
     )
