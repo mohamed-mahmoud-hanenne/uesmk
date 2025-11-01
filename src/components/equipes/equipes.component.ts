@@ -22,12 +22,12 @@ export class EquipesComponent implements OnInit {
   equipe: Membre[] = [];
 
   private equipeData = [
-    { numero: '212606041737+', image: 'elhadj.jpeg' },
-    { numero: '212631665320+', image: 'khatary.jpeg' },
-    { numero: '22234653434+', image: 'elabass.jpeg' },
-    { numero: '22227800379+', image: 'moi.jpeg' },
-    { numero: '212610576108+', image: 'kaber.png' },
-    { numero: '212653821475+', image: 'Mariem.jpeg' }
+    { image: 'elhadj.jpeg' },
+    { image: 'khatary.jpeg' },
+    { image: 'elabass.jpeg' },
+    { image: 'moi.jpeg' },
+    { image: 'kaber.png' },
+    { image: 'Mariem.jpeg' }
   ];
 
   constructor(private translate: TranslateService) {}
@@ -44,17 +44,21 @@ export class EquipesComponent implements OnInit {
   loadContent() {
     // Charger la description
     this.translate.get('team.description').subscribe((desc: string) => {
-      this.description = desc;
+      this.description = desc
     });
+
 
     // Charger les membres de l'équipe
     this.translate.get('team.members').subscribe((members: any[]) => {
       this.equipe = this.equipeData.map((data, index) => ({
         nom: members[index]?.name || '',
         poste: members[index]?.position || '',
-        numero: data.numero,
+        numero: members[index]?.phone || '',
         image: data.image
       }));
     });
   }
+
+
+  
 }

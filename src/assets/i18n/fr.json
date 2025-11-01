@@ -299,27 +299,33 @@
     "members": [
       {
         "name": "Elhadj Hamed",
-        "position": "Secrétaire général"
+        "position": "Secrétaire général",
+        "phone": "+212 606 041 737"
       },
       {
         "name": "Khattary Amar Ould Baba",
-        "position": "Secrétaire général adjoint"
+        "position": "Secrétaire général adjoint",
+        "phone" : "+212 631 665 320"
       },
       {
         "name": "Eboulabass Ennahoui",
-        "position": "Responsable de l'information et de la formation"
+        "position": "Responsable de l'information et de la formation",
+        "phone": "+222 34 65 34 34"
       },
       {
         "name": "Mohamed Mahmoud Hanenne",
-        "position": "Responsable des relations extérieures et des affaires académiques"
+        "position": "Responsable des relations extérieures et des affaires académiques",
+        "phone": "+222 27 80 03 79"
       },
       {
         "name": "Kaber Sidi",
-        "position": "Responsable des finances et des affaires sociales"
+        "position": "Responsable des finances et des affaires sociales",
+        "phone": "+212 610 576 108"
       },
       {
         "name": "Mariem Taleb",
-        "position": "Responsable de l'organisation et de la culture"
+        "position": "Responsable de l'organisation et de la culture",
+        "phone": "+212 653 821 475"
       }
     ]
   },
