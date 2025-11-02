@@ -112,6 +112,45 @@
 }
 
 
+/* Ajustements responsive */
+@media (max-width: 768px) {
+  .header-bg {
+    min-height: 50vh;          /* moins de hauteur sur tablette */
+    background-size: cover;    /* cover garde le ratio */
+    background-position: center top; /* on peut ajuster le focus */
+  }
+
+  .header-bg h3 {
+    font-size: 1.8rem;         /* texte plus petit */
+  }
+
+  .header-bg p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-bg {
+    min-height: 40vh;          /* moins de hauteur sur mobile */
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .header-bg h3 {
+    font-size: 1.4rem;
+  }
+
+  .header-bg p {
+    font-size: 0.9rem;
+  }
+
+  .header-bg .btn {
+    padding: 0.5rem 1rem;      /* boutons plus petits */
+    font-size: 0.9rem;
+  }
+}
+
+
 /* ==================== Section Actualités ==================== */
 .section-actus {
   background-color: #fafafa;
