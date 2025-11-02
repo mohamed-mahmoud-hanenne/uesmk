@@ -13,6 +13,17 @@ export class NavbarComponent {
     isDarkMode = false; // Par défaut clair
     currentLang = 'fr';
 
+      // Méthode pour fermer le navbar
+  closeNavbar() {
+    const navbarCollapse = document.getElementById('navbarContent');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      const bsCollapse = new (window as any).bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    }
+  }
+
   constructor(private translate: TranslateService) {
     // Définir la langue par défaut
     this.translate.setDefaultLang('fr');
