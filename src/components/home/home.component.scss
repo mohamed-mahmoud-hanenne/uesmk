@@ -71,12 +71,12 @@
 }
 
 /* ==================== Header ==================== */
-header {
-  background-image: url('/src/assets/images/equipe-uesmk.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+// header {
+//   background-image: url('/src/assets/images/equipe-uesmk.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
 
 .header-bg {
   background-image: url("/assets/images/bag-uesmk.jpg");
@@ -90,7 +90,27 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  /* Animation */
+  animation: bgSlide 15s infinite; /* 5 images × 3s = 15s total */
+  transition: background-image 1s ease-in-out;
 }
+
+@keyframes bgSlide {
+  0% {
+    background-image: url("/assets/images/bag-uesmk.jpg");
+  }
+  40% {
+    background-image: url("/assets/images/bag-uesmk3.jpeg");
+  }
+  80% {
+    background-image: url("/assets/images/equipe-uesmk.jpg");
+  }
+  100% {
+    background-image: url("/assets/images/bag-uesmk.jpg");
+  }
+}
+
 
 /* ==================== Section Actualités ==================== */
 .section-actus {

@@ -20,19 +20,23 @@ export class HomeComponent {
     'Tournois de foot.jpeg',
     'Activité 2.jpeg',
     'kenitra mauri league.jpeg',
-    'Fête de l’indépendance.jpeg',
+    'Fête de independance.jpeg',
     'Mcf aisec.jpeg',
     'Ifrane trip.jpeg',
     'Mini can cesam.jpeg',
     'Eid al fitr 2025.jpeg',
-    'Soirée d’excellence 2025.jpeg'
+    'Soirée excellence 2025.jpeg'
   ];
+  
 
   constructor(private translate: TranslateService) {}
+
 
   get visibleImages() {
     return this.allImages.slice(this.currentIndex, this.currentIndex + this.imagesPerPage);
   }
+
+  
 
 showList(titleKey: string, sectionKey: string) {
   // Récupérer le titre traduit
@@ -89,6 +93,6 @@ showList(titleKey: string, sectionKey: string) {
   }
 
   onImgError(event: any) {
-    event.target.src = 'assets/placeholder.jpg';
+    event.target.src = 'assets/bag-uesmk.jpg';
   }
 }
