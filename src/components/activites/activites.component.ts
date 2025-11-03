@@ -35,7 +35,7 @@ export class ActivitesComponent implements OnInit {
       details: '/activites/conference-orientation'
     },
     {
-      image: 'Fête de indépendance.jpeg',
+      image: 'Fête de independance.jpeg',
       details: '/activites/bienvenue-2025'
     },
     {

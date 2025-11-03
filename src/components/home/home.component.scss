@@ -103,11 +103,23 @@
   40% {
     background-image: url("/assets/images/bag-uesmk3.jpeg");
   }
+  60% {
+    background-image: url("/assets/images/uesmk2.jpeg");
+  }
   80% {
     background-image: url("/assets/images/equipe-uesmk.jpg");
   }
   100% {
     background-image: url("/assets/images/bag-uesmk.jpg");
+  }
+}
+
+/* ✅ Pour corriger les bugs Safari mobile (iPhone) */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center center !important;
   }
 }
 

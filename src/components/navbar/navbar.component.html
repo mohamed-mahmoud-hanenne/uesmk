@@ -21,13 +21,13 @@
     <li class="nav-item"><a class="nav-link" routerLink="contact" routerLinkActive="active-link" (click)="closeNavbar()">{{ 'navbar.contact' | translate }}</a></li>
     
     <li class="nav-item ms-lg-3">
-      <button class="btn btn-modern px-3" (click)="toggleLanguage()">
+      <button class="btn btn-modern px-3" (click)="toggleLanguage()" (click)="closeNavbar()">
         {{ currentLang === 'fr' ? 'العربية' : 'Français' }}
       </button>
     </li>
 
     <li class="nav-item ms-lg-2">
-      <button class="btn btn-icon" (click)="toggleTheme()">
+      <button class="btn btn-icon" (click)="toggleTheme()" (click)="closeNavbar()">
         <i class="bi" [class.bi-sun]="isDarkMode" [class.bi-moon]="!isDarkMode"></i>
       </button>
     </li>
