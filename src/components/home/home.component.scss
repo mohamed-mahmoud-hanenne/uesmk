@@ -79,7 +79,7 @@
 // }
 
 .header-bg {
-  background-image: url("/assets/images/bag-uesmk.jpg");
+  background-image: url("/assets/images/equipe-uesmk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,37 +91,37 @@
   justify-content: center;
   text-align: center;
 
-  /* Animation */
-  animation: bgSlide 15s infinite; /* 5 images × 3s = 15s total */
-  transition: background-image 1s ease-in-out;
+  // /* Animation */
+  // animation: bgSlide 15s infinite; /* 5 images × 3s = 15s total */
+  // transition: background-image 1s ease-in-out;
 }
 
-@keyframes bgSlide {
-  0% {
-    background-image: url("/assets/images/bag-uesmk.jpg");
-  }
-  40% {
-    background-image: url("/assets/images/bag-uesmk3.jpeg");
-  }
-  60% {
-    background-image: url("/assets/images/uesmk2.jpeg");
-  }
-  80% {
-    background-image: url("/assets/images/equipe-uesmk.jpg");
-  }
-  100% {
-    background-image: url("/assets/images/bag-uesmk.jpg");
-  }
-}
+// @keyframes bgSlide {
+//   0% {
+//     background-image: url("/assets/images/bag-uesmk.jpg");
+//   }
+//   40% {
+//     background-image: url("/assets/images/bag-uesmk3.jpeg");
+//   }
+//   60% {
+//     background-image: url("/assets/images/uesmk2.jpeg");
+//   }
+//   80% {
+//     background-image: url("/assets/images/equipe-uesmk.jpg");
+//   }
+//   100% {
+//     background-image: url("/assets/images/bag-uesmk.jpg");
+//   }
+// }
 
-/* ✅ Pour corriger les bugs Safari mobile (iPhone) */
-@supports (-webkit-touch-callout: none) {
-  body {
-    background-attachment: scroll !important;
-    background-size: cover !important;
-    background-position: center center !important;
-  }
-}
+// /* ✅ Pour corriger les bugs Safari mobile (iPhone) */
+// @supports (-webkit-touch-callout: none) {
+//   body {
+//     background-attachment: scroll !important;
+//     background-size: cover !important;
+//     background-position: center center !important;
+//   }
+// }
 
 
 /* Ajustements responsive */

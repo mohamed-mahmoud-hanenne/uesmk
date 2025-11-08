@@ -35,6 +35,7 @@ export class HomeComponent {
   get visibleImages() {
     return this.allImages.slice(this.currentIndex, this.currentIndex + this.imagesPerPage);
   }
+  
 
   
 
