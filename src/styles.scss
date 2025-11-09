@@ -17,15 +17,41 @@
   padding-top: 70px;
 }
 
-/* Mode sombre global */
-.dark-mode {
+/* === Thème clair (par défaut) === */
+body {
+  background-color: #fff;
+  color: #212529;
+}
+
+/* === Thème sombre === */
+body.dark-mode {
   background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Cartes et éléments du home */
+body.dark-mode .section-actus,
+body.dark-mode .event-card,
+body.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: #f5f5f5 !important;
+  border-color: #333 !important;
+}
+
+body.dark-mode .text-muted {
+  color: #bbb !important;
+}
+
+body.dark-mode .btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+body.dark-mode .btn-outline-success:hover {
+  background-color: #28a745;
   color: white;
 }
 
-// .section-actus {
-//   color: #121212;
-// }
 
 /* Navbar en mode sombre */
 .dark-mode .navbar {
@@ -36,6 +62,8 @@
 .dark-mode a {
   color: white !important;
 }
+
+
 
 
 
