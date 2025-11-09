@@ -1,4 +1,18 @@
 /* ==================== HEADER ==================== */
+// .header-bg {
+//   background-image: url("/assets/images/equipe-uesmk.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   color: white;
+//   position: relative;
+//   min-height: 70vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
+// }
+
 .header-bg {
   background-image: url("/assets/images/equipe-uesmk.jpg");
   background-size: cover;
@@ -11,9 +25,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: background-image 1s ease-in-out; /* 👈 fondu fluide */
 }
 
-/* ✅ Ajustements responsive du header */
+
+/* Ajustements responsive du header */
 @media (max-width: 768px) {
   .header-bg {
     min-height: 50vh;

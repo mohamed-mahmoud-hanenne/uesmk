@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -17,7 +17,7 @@ interface Event {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit{
   // --- Pour les icônes dans les cartes ---
   isOpen: { [key: number]: boolean } = {};
 
@@ -78,16 +78,26 @@ export class HomeComponent {
 
   constructor(private translate: TranslateService) {}
 
-    ngOnInit() {
+  ngOnInit() {
     this.loadActivites();
-    
-    // Recharger les activités quand la langue change
-    this.translate.onLangChange.subscribe(() => {
-      this.loadActivites();
-    });
+    this.translate.onLangChange.subscribe(() => this.loadActivites());
   }
 
-  
+  ngAfterViewInit() {
+    if (typeof document !== 'undefined') {
+      const header = document.querySelector('.header-bg') as HTMLElement;
+      const images = [
+        'bag-uesmk.jpg',
+        'uesmk2.jpeg'
+      ];
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % images.length;
+        header.style.backgroundImage = `url('${images[index]}')`;
+      }, 3000);
+    }
+  }
 
 
   loadActivites() {
