@@ -225,3 +225,26 @@
     height: 160px;
   }
 }
+
+
+/* Container des événements */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Chaque carte prend 2 sur une ligne (50%) */
+.event-card {
+  flex: 0 0 calc(50% - 1rem);
+  max-width: calc(50% - 1rem);
+}
+
+/* 🧠 Sur petits écrans (téléphones), une seule carte par ligne */
+@media (max-width: 768px) {
+  .event-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

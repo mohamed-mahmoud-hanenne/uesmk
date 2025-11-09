@@ -23,7 +23,7 @@ export class HomeComponent {
 
   // --- Pour la section Événements ---
   currentIndex = 0;
-  eventsPerPage = 2;
+  eventsPerPage = 1;
 
   eventsUesmk: Event[] =  []
 
@@ -86,6 +86,8 @@ export class HomeComponent {
       this.loadActivites();
     });
   }
+
+  
 
 
   loadActivites() {
