@@ -109,24 +109,25 @@
   <div class="container px-5 my-5">
     <div class="text-center mb-4">
       <h2 class="fw-bolder text-success">{{ 'home.events.title' | translate }}</h2>
-      <p class="lead text-muted" [innerHTML]="'home.events.subtitle' | translate"></p>
+      <p class="lead text-muted">{{ 'home.events.subtitle' | translate }}</p>
     </div>
 
     <div class="events-carousel mx-auto">
-      <div class="image-row d-flex gap-3 justify-content-center">
-        <ng-container *ngFor="let src of visibleImages; let i = index">
-          <div class="image-wrapper">
-            <img 
-              [src]="src" 
-              (error)="onImgError($event)" 
-              [alt]="('home.events.altEvent' | translate) + ' ' + (currentIndex + i + 1)" 
-              class="img-fluid rounded shadow-sm"
-            >
-          </div>
+      <div class="image-row d-flex flex-wrap justify-content-center gap-4">
+        <ng-container *ngFor="let event of visibleEvents">
+          <div class="event-card text-center">
+            <div class="image-wrapper mb-3">
+              <img 
+                [src]="event.image"
+                (error)="onImgError($event)" 
+                
+                class="img-fluid rounded shadow-sm"
+              >
+            </div>
+            <h5 class="fw-bold text-success">{{ event.titre }}</h5>
+            <p class="text-muted">{{ event.description }}</p>
+          </div>  
         </ng-container>
-
-        <!-- Placeholder invisible si une seule image -->
-        <div *ngIf="visibleImages.length === 1" class="image-wrapper placeholder"></div>
       </div>
 
       <div class="controls d-flex justify-content-center gap-3 mt-4">

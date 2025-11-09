@@ -55,14 +55,51 @@
     },
     "events": {
       "title": "Nos Événements",
-      "subtitle": "Cliquez sur <strong>Suivant</strong> / <strong>Précédent</strong> pour voir les autres événements.",
+      "subtitle": "Cliquez sur Suivant / Précédent pour voir les autres événements.",
+      "items": [
+        {
+          "title": "Tournois de Foot",
+          "description": "Compétition sportive rassemblant les étudiants autour du fair-play et de l’esprit d’équipe."
+        },
+        {
+          "title": "Activité Culturelle",
+          "description": "Une activité mettant en valeur la créativité et les talents artistiques des participants."
+        },
+        {
+          "title": "Kenitra Mauri League",
+          "description": "Tournoi interuniversitaire réunissant les étudiants mauritaniens de Kénitra."
+        },
+        {
+          "title": "Fête de l’Indépendance",
+          "description": "Célébration nationale marquant l’unité et la culture mauritanienne à l’étranger."
+        },
+        {
+          "title": "Mcf AIESEC",
+          "description": "Collaboration entre associations étudiantes pour promouvoir le leadership et l’échange culturel."
+        },
+        {
+          "title": "Voyage à Ifrane",
+          "description": "Excursion universitaire pour découvrir la beauté naturelle et culturelle de la région."
+        },
+        {
+          "title": "Mini CAN CESAM",
+          "description": "Compétition amicale inspirée de la Coupe d’Afrique des Nations entre clubs étudiants."
+        },
+        {
+          "title": "Eid Al-Fitr 2025",
+          "description": "Moment de partage et de convivialité pour célébrer la fin du Ramadan entre étudiants."
+        },
+        {
+          "title": "Soirée d’Excellence 2025",
+          "description": "Cérémonie honorant les étudiants les plus méritants dans une ambiance festive."
+        }
+      ],
       "btnPrev": "Précédent",
       "btnNext": "Suivant",
       "altEvent": "Événement"
     }
   },
-
-    "documents": {
+  "documents": {
     "title": "Documents",
     "btnViewMore": "Voir plus",
     "btnClose": "Fermer",
@@ -138,8 +175,7 @@
       }
     }
   },
-
-    "universite": {
+  "universite": {
     "title": "Université Ibn Tofail",
     "btnDetails": "Voir détails",
     "btnOfficialSite": "Site officiel",
@@ -194,8 +230,7 @@
       }
     ]
   },
-
-    "activities": {
+  "activities": {
     "title": "Activités",
     "btnDetails": "Voir détails",
     "items": [
@@ -237,7 +272,6 @@
       }
     ]
   },
-
   "courati": {
     "title": "Cours - UESMK",
     "step1": "Choisir un établissement",
@@ -252,14 +286,20 @@
           {
             "type": "Licence",
             "filieres": [
-              { "name": "Mathématiques" },
-              { "name": "Informatique" }
+              {
+                "name": "Mathématiques"
+              },
+              {
+                "name": "Informatique"
+              }
             ]
           },
           {
             "type": "Master",
             "filieres": [
-              { "name": "Physique" }
+              {
+                "name": "Physique"
+              }
             ]
           }
         ]
@@ -270,8 +310,12 @@
           {
             "type": "Prepa",
             "filieres": [
-              { "name": "Génie Informatique" },
-              { "name": "Génie Civil" }
+              {
+                "name": "Génie Informatique"
+              },
+              {
+                "name": "Génie Civil"
+              }
             ]
           }
         ]
@@ -282,17 +326,19 @@
           {
             "type": "Prepa",
             "filieres": [
-              { "name": "Comptabilité" },
-              { "name": "Marketing" }
+              {
+                "name": "Comptabilité"
+              },
+              {
+                "name": "Marketing"
+              }
             ]
           }
         ]
       }
     ]
   },
-
-
-    "team": {
+  "team": {
     "aboutTitle": "À propos de l'UESMK",
     "description": "L'Union des Étudiants et Stagiaires Mauritaniens (UESM) est une organisation estudiantine créée en 1997 à Rabat. Elle a pour mission principale d'accompagner les étudiants et stagiaires mauritaniens dans leur parcours académique et social au Maroc, en favorisant leur intégration, en défendant leurs intérêts et en organisant diverses activités scientifiques, culturelles et associatives. Afin de rapprocher ses actions des étudiants, l'Union est structurée en sections locales dans plusieurs villes universitaires marocaines. La section de Kénitra, fondée il y a plus de treize ans, poursuit les mêmes missions et incarne les mêmes valeurs que l'Union centrale, tout en les adaptant aux besoins spécifiques des étudiants et stagiaires mauritaniens installés dans la ville de Kénitra.",
     "teamTitle": "Notre Équipe",
@@ -305,7 +351,7 @@
       {
         "name": "Khattary Amar Ould Baba",
         "position": "Secrétaire général adjoint",
-        "phone" : "+212 631 665 320"
+        "phone": "+212 631 665 320"
       },
       {
         "name": "Eboulabass Ennahoui",
@@ -329,8 +375,6 @@
       }
     ]
   },
-
-
   "contact": {
     "title": "Contactez Nous",
     "email": "Email",
@@ -338,8 +382,7 @@
     "btnWhatsApp": "Discuter sur WhatsApp",
     "socialTitle": "Suivez-nous"
   },
-
-    "footer": {
+  "footer": {
     "about": {
       "title": "UESMK",
       "description": "L'Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) est une organisation qui vise à rassembler, soutenir et représenter les étudiants et stagiaires mauritaniens à Kénitra."
@@ -359,5 +402,4 @@
     },
     "copyright": "© 2025 Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) - Tous droits réservés - by Hanenne"
   }
-
 }
