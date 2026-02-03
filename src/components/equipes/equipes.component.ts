@@ -24,7 +24,7 @@ export class EquipesComponent implements OnInit {
     { image: 'ikebrou.jpeg' },
     { image: 'moi.jpeg' },
     { image: 'lhacenmed.jpeg' },
-    { image: 'kaber.png' },
+    { image: 'tah.jpeg' },
     { image: 'med_lvilaly.jpeg' },
     // { image: 'kaber.png' },
   ];

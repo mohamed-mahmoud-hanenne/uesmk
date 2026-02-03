@@ -15,56 +15,59 @@ interface Activite {
   standalone: true,
   imports: [RouterLink, CommonModule, TranslateModule],
   templateUrl: './activites.component.html',
-  styleUrl: './activites.component.scss'
+  styleUrl: './activites.component.scss',
 })
 export class ActivitesComponent implements OnInit {
-
   activites: Activite[] = [];
 
   private activitesData = [
     {
       image: 'Tournois de foot.jpeg',
-      details: '/activites/bienvenue-2025'
+      details: '/activites/bienvenue-2025',
     },
     {
       image: 'Activité 2.jpeg',
-      details: '/activites/football'
+      details: '/activites/football',
     },
     {
       image: 'kenitra mauri league.jpeg',
-      details: '/activites/conference-orientation'
+      details: '/activites/conference-orientation',
     },
     {
       image: 'Fête de independance.jpeg',
-      details: '/activites/bienvenue-2025'
+      details: '/activites/bienvenue-2025',
     },
     {
       image: 'Mcf aisec.jpeg',
-      details: '/activites/football'
+      details: '/activites/football',
     },
     {
       image: 'Ifrane trip.jpeg',
-      details: '/activites/conference-orientation'
+      details: '/activites/conference-orientation',
     },
     {
       image: 'Mini can cesam.jpeg',
-      details: '/activites/conference-orientation'
+      details: '/activites/conference-orientation',
     },
     {
-      image: "Eid al fitr 2025.jpeg",
-      details: '/activites/conference-orientation'
+      image: 'Eid al fitr 2025.jpeg',
+      details: '/activites/conference-orientation',
     },
     {
       image: 'Soirée excellence 2025.jpeg',
-      details: '/activites/conference-orientation'
-    }
+      details: '/activites/conference-orientation',
+    },
+    {
+      image: 'Ifrane trip 2.jpeg',
+      details: '/activites/ifrane-trip',
+    },
   ];
 
   constructor(private translate: TranslateService) {}
 
   ngOnInit() {
     this.loadActivites();
-    
+
     // Recharger les activités quand la langue change
     this.translate.onLangChange.subscribe(() => {
       this.loadActivites();
@@ -77,7 +80,7 @@ export class ActivitesComponent implements OnInit {
         titre: translations[index]?.title || '',
         description: translations[index]?.description || '',
         image: act.image,
-        details: act.details
+        details: act.details,
       }));
     });
   }

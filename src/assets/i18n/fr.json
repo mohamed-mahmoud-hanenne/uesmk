@@ -92,6 +92,10 @@
         {
           "title": "Soirée d’Excellence 2025",
           "description": "Cérémonie honorant les étudiants les plus méritants dans une ambiance festive."
+        },
+        {
+          "title": "Voyage à Ifrane",
+          "description": "Excursion universitaire pour découvrir la beauté naturelle et culturelle de la région."
         }
       ],
       "btnPrev": "Précédent",
@@ -269,6 +273,10 @@
       {
         "title": "Soirée d'excellence 2ème édition & Eid al Adhaa",
         "description": "Deuxième édition de la soirée d'excellence avec célébration de l'Eid al Adhaa."
+      },
+      {
+        "title": "Ifrane trip",
+        "description": "Voyage touristique à Ifrane pour découvrir la beauté de la région."
       }
     ]
   },
