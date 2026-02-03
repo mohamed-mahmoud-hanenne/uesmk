@@ -344,29 +344,29 @@
     "teamTitle": "Notre Équipe",
     "members": [
       {
-        "name": "Elhadj Hamed",
+        "name": "Ikebrou Mohamed Ahmed Tiyib",
         "position": "Secrétaire général",
-        "phone": "+212 606 041 737"
-      },
-      {
-        "name": "Khattary Amar Ould Baba",
-        "position": "Secrétaire général adjoint",
-        "phone": "+212 631 665 320"
-      },
-      {
-        "name": "Eboulabass Ennahoui",
-        "position": "Responsable de l'information et de la formation",
-        "phone": "+222 34 65 34 34"
+        "phone": "+222 41 21 71 14"
       },
       {
         "name": "Mohamed Mahmoud Hanenne",
-        "position": "Responsable des relations extérieures et des affaires académiques",
+        "position": "Secrétaire général adjoint",
         "phone": "+222 27 80 03 79"
       },
       {
         "name": "Elhassen Sidi Abdella",
         "position": "Responsable des finances et des affaires sociales",
         "phone": "+212 724 963 698"
+      },
+      {
+        "name": "Tah Mouhamed Oubeid",
+        "position": "Responsable des relations extérieures et des affaires académiques",
+        "phone": "+212 773 865 694"
+      },
+      {
+        "name": "Mohamed Vilaly",
+        "position": "Responsable de l'information et de la formation",
+        "phone": "+222 34 20 07 22"
       },
       {
         "name": "Mariem Taleb",

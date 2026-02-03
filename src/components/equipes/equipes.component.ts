@@ -17,24 +17,23 @@ interface Membre {
   styleUrl: './equipes.component.scss'
 })
 export class EquipesComponent implements OnInit {
-
   description: string = '';
   equipe: Membre[] = [];
 
   private equipeData = [
-    { image: 'elhadj.jpeg' },
-    { image: 'khatary.jpeg' },
-    { image: 'elabass.jpeg' },
+    { image: 'ikebrou.jpeg' },
     { image: 'moi.jpeg' },
     { image: 'lhacenmed.jpeg' },
-    { image: 'Mariem.jpeg' }
+    { image: 'kaber.png' },
+    { image: 'med_lvilaly.jpeg' },
+    // { image: 'kaber.png' },
   ];
 
   constructor(private translate: TranslateService) {}
 
   ngOnInit() {
     this.loadContent();
-    
+
     // Recharger le contenu quand la langue change
     this.translate.onLangChange.subscribe(() => {
       this.loadContent();
@@ -44,9 +43,8 @@ export class EquipesComponent implements OnInit {
   loadContent() {
     // Charger la description
     this.translate.get('team.description').subscribe((desc: string) => {
-      this.description = desc
+      this.description = desc;
     });
-
 
     // Charger les membres de l'équipe
     this.translate.get('team.members').subscribe((members: any[]) => {
@@ -54,11 +52,8 @@ export class EquipesComponent implements OnInit {
         nom: members[index]?.name || '',
         poste: members[index]?.position || '',
         numero: members[index]?.phone || '',
-        image: data.image
+        image: data.image,
       }));
     });
   }
-
-
-  
 }
