@@ -76,12 +76,14 @@ export class ActivitesComponent implements OnInit {
 
   loadActivites() {
     this.translate.get('activities.items').subscribe((translations: any[]) => {
-      this.activites = this.activitesData.map((act, index) => ({
-        titre: translations[index]?.title || '',
-        description: translations[index]?.description || '',
-        image: act.image,
-        details: act.details,
-      }));
+      this.activites = this.activitesData
+        .map((act, index) => ({
+          titre: translations[index]?.title || '',
+          description: translations[index]?.description || '',
+          image: act.image,
+          details: act.details,
+        }))
+        .reverse();
     });
   }
 }

@@ -123,15 +123,17 @@ export class HomeComponent implements AfterViewInit {
       }
 
       // Fusionne la liste originale (images) avec les traductions disponibles
-      this.eventsUesmk = this.events.map((event, index) => {
-        const trans = translations[index] || {}; // si la traduction manque, on évite l'erreur
+      this.eventsUesmk = this.events
+        .map((event, index) => {
+          const trans = translations[index] || {}; // si la traduction manque, on évite l'erreur
 
-        return {
-          image: event.image,
-          titre: trans.title || event.title, // fallback à la valeur par défaut (français)
-          description: trans.description || event.description,
-        };
-      });
+          return {
+            image: event.image,
+            titre: trans.title || event.title, // fallback à la valeur par défaut (français)
+            description: trans.description || event.description,
+          };
+        })
+        .reverse();
     });
   }
 
