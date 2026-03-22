@@ -22,6 +22,11 @@
     "title": "Nos Événements",
     "lead": "Cliquez sur Suivant / Précédent pour voir les autres événements.",
     "prev": "Précédent",
-    "next": "Suivant"
+    "next": "Suivant",
+    "aidFitr2026": {
+      "title": "Aïd al-Fitr 2026 — Kénitra",
+      "date": "20 mars 2026",
+      "description": "Le 20 mars 2026, célébration fraternelle à Kénitra : animations culturelles, chants patrimoniaux et hommage à des étudiants engagés pour leurs camarades."
+    }
   }
 }

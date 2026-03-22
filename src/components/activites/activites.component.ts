@@ -61,6 +61,10 @@ export class ActivitesComponent implements OnInit {
       image: 'Ifrane trip 2.jpeg',
       details: '/activites/ifrane-trip',
     },
+    {
+      image: 'aïd-post.png',
+      details: '/activites/conference-orientation',
+    },
   ];
 
   constructor(private translate: TranslateService) {}

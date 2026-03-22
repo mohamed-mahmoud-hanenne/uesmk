@@ -89,6 +89,12 @@ export class HomeComponent implements AfterViewInit {
       description:
         'Excursion universitaire pour découvrir la beauté naturelle et culturelle de la région.',
     },
+    {
+      image: 'aïd-post.png',
+      title: 'Aïd al-Fitr 2026 — Kénitra',
+      description:
+        'Le 20 mars 2026, célébration fraternelle à Kénitra : animations culturelles, chants patrimoniaux et hommage à des étudiants engagés pour leurs camarades.',
+    },
   ];
 
   constructor(private translate: TranslateService) {}
