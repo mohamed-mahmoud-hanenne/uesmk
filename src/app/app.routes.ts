@@ -15,5 +15,6 @@ export const routes: Routes = [
     {path:'activites', component:ActivitesComponent},
     {path:'courati', component:CouratiComponent},
     {path:'equipes', component:EquipesComponent},
-    {path:'contact', component:ContactComponent}
+    {path:'contact', component:ContactComponent},
+    { path: 'rabat-trips', loadComponent: () => import('../components/rabat-trips/rabat-trips.component').then(m => m.RabatTripsComponent) },
 ];

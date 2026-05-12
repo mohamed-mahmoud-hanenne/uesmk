@@ -137,10 +137,7 @@
       },
       "priseEnCharge": {
         "title": "Prise en charge",
-        "items": [
-          "Copie du passeport",
-          "Copie de l'attestation d'inscription"
-        ]
+        "items": ["Copie du passeport", "Copie de l'attestation d'inscription"]
       },
       "lettreExcuse": {
         "title": "Lettre d'excuse",
@@ -154,9 +151,7 @@
       },
       "conformiteNom": {
         "title": "Attestation de conformité de nom",
-        "items": [
-          "Copies des documents requis et correspondance entre eux"
-        ]
+        "items": ["Copies des documents requis et correspondance entre eux"]
       },
       "procuration": {
         "title": "Procuration",
@@ -417,5 +412,48 @@
       "phone": "+222 27 80 03 79"
     },
     "copyright": "© 2025 Union des Étudiants et Stagiaires Mauritaniens à Kénitra (UESMK) - Tous droits réservés -"
+  },
+  "rabatTrips": {
+    "hero": {
+      "title": "Voyage à Rabat — Inscriptions",
+      "subtitle": "Organisé par l'UESMK pour vous accompagner à l'AMCI et à l'Ambassade Mauritanienne.",
+      "info": "Remplissez ce formulaire pour vous inscrire au prochain voyage organisé. L'équipe de l'UESMK vous contactera pour confirmer votre place selon les disponibilités."
+    },
+    "dest": {
+      "amci": {
+        "title": "AMCI",
+        "desc": "Agence Marocaine de la Coopération Internationale — bourse, renouvellement, régularisation."
+      },
+      "ambassade": {
+        "title": "Ambassade Mauritanienne",
+        "desc": "Ambassade de Mauritanie à Rabat — passeport, prise en charge, laissez-passer, procuration."
+      },
+      "both": "Les deux"
+    },
+    "form": {
+      "title": "S'inscrire au prochain voyage",
+      "subtitle": "Champs marqués * sont obligatoires.",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Ex : Mohamed Ould Ahmed",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "Ex : +212 6XX XXX XXX",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "establishment": "Établissement",
+      "establishmentPlaceholder": "Ex : ENSA Kénitra",
+      "destination": "Destination",
+      "reason": "Motif de la visite",
+      "reasonPlaceholder": "-- Sélectionner un motif --",
+      "description": "Description",
+      "descriptionPlaceholder": "Décrivez votre démarche ou tout détail utile pour l'équipe...",
+      "optional": "facultatif",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Demande envoyée !",
+      "successMsg": "Votre inscription a bien été reçue. L'équipe UESMK vous contactera dès qu'un voyage est organisé.",
+      "errorTitle": "Erreur d'envoi",
+      "errorMsg": "Une erreur est survenue. Vérifiez votre connexion et réessayez.",
+      "retry": "Réessayer"
+    }
   }
 }
