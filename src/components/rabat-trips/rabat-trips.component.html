@@ -6,15 +6,9 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-7 text-center py-5 my-3">
-        <div class="rt-hero-icon mb-3">
-          <i class="bi bi-bus-front-fill"></i>
-        </div>
-        <h1 class="display-6 fw-bolder text-white mb-2">
-          {{ 'rabatTrips.hero.title' | translate }}
-        </h1>
-        <p class="lead text-white-50 mb-0">
-          {{ 'rabatTrips.hero.subtitle' | translate }}
-        </p>
+        <div class="rt-hero-icon mb-3"><i class="bi bi-bus-front-fill"></i></div>
+        <h1 class="display-6 fw-bolder text-white mb-2">{{ 'rabatTrips.hero.title' | translate }}</h1>
+        <p class="lead text-white-50 mb-0">{{ 'rabatTrips.hero.subtitle' | translate }}</p>
       </div>
     </div>
   </div>
@@ -38,7 +32,6 @@
 <section class="py-5">
   <div class="container">
     <div class="row justify-content-center g-4 mb-5">
-
       <div class="col-md-5">
         <div class="rt-dest-card p-4 rounded-3 h-100">
           <div class="rt-dest-icon mb-3"><i class="bi bi-bank2"></i></div>
@@ -46,7 +39,6 @@
           <p class="small text-muted mb-0">{{ 'rabatTrips.dest.amci.desc' | translate }}</p>
         </div>
       </div>
-
       <div class="col-md-5">
         <div class="rt-dest-card p-4 rounded-3 h-100">
           <div class="rt-dest-icon mb-3"><i class="bi bi-flag-fill"></i></div>
@@ -54,22 +46,25 @@
           <p class="small text-muted mb-0">{{ 'rabatTrips.dest.ambassade.desc' | translate }}</p>
         </div>
       </div>
-
     </div>
 
-    <!-- ===== FORM CARD ===== -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center g-4">
+
+      <!-- ===== FORM COLUMN ===== -->
       <div class="col-lg-7">
 
         <!-- SUCCESS STATE -->
-        <div *ngIf="status === 'success'" class="rt-state-card text-center p-5 rounded-4">
+        <div *ngIf="status === 'success'" class="rt-state-card text-center p-5 rounded-4 mb-4">
           <div class="rt-state-icon success mb-3"><i class="bi bi-check-circle-fill"></i></div>
           <h4 class="fw-bold mb-2">{{ 'rabatTrips.form.successTitle' | translate }}</h4>
           <p class="text-muted">{{ 'rabatTrips.form.successMsg' | translate }}</p>
+          <button class="btn btn-outline-success rounded-pill px-4 mt-2" (click)="status = 'idle'">
+            {{ 'rabatTrips.form.newRequest' | translate }}
+          </button>
         </div>
 
         <!-- ERROR STATE -->
-        <div *ngIf="status === 'error'" class="rt-state-card text-center p-5 rounded-4">
+        <div *ngIf="status === 'error'" class="rt-state-card text-center p-5 rounded-4 mb-4">
           <div class="rt-state-icon error mb-3"><i class="bi bi-x-circle-fill"></i></div>
           <h4 class="fw-bold mb-2">{{ 'rabatTrips.form.errorTitle' | translate }}</h4>
           <p class="text-muted">{{ 'rabatTrips.form.errorMsg' | translate }}</p>
@@ -86,68 +81,55 @@
           <!-- Full name -->
           <div class="mb-3">
             <label class="form-label fw-semibold rt-label">
-              {{ 'rabatTrips.form.fullName' | translate }}
-              <span class="text-danger">*</span>
+              {{ 'rabatTrips.form.fullName' | translate }} <span class="text-danger">*</span>
             </label>
-            <input
-              type="text"
-              class="form-control rt-input"
-              [(ngModel)]="form.full_name"
+            <input type="text" class="form-control rt-input" [(ngModel)]="form.full_name"
               [placeholder]="'rabatTrips.form.fullNamePlaceholder' | translate"
-              [disabled]="status === 'loading'"
-            />
+              [disabled]="status === 'loading'" />
           </div>
 
-          <!-- Phone -->
+          <!-- WhatsApp phone -->
           <div class="mb-3">
             <label class="form-label fw-semibold rt-label">
-              {{ 'rabatTrips.form.phone' | translate }}
-              <span class="text-danger">*</span>
+              {{ 'rabatTrips.form.phone' | translate }} <span class="text-danger">*</span>
             </label>
-            <input
-              type="tel"
-              class="form-control rt-input"
-              [(ngModel)]="form.phone"
-              [placeholder]="'rabatTrips.form.phonePlaceholder' | translate"
-              [disabled]="status === 'loading'"
-            />
+            <div class="rt-whatsapp-input-wrap">
+              <span class="rt-whatsapp-badge"><i class="bi bi-whatsapp"></i></span>
+              <input type="tel" class="form-control rt-input rt-input-indented"
+                [(ngModel)]="form.phone"
+                [placeholder]="'rabatTrips.form.phonePlaceholder' | translate"
+                [disabled]="status === 'loading'" />
+            </div>
+            <div class="rt-field-hint"><i class="bi bi-info-circle me-1"></i>{{ 'rabatTrips.form.phoneHint' | translate }}</div>
           </div>
 
-          <!-- Email (optional) -->
+          <!-- Email -->
           <div class="mb-3">
             <label class="form-label fw-semibold rt-label">
               {{ 'rabatTrips.form.email' | translate }}
               <span class="text-muted fw-normal small">({{ 'rabatTrips.form.optional' | translate }})</span>
             </label>
-            <input
-              type="email"
-              class="form-control rt-input"
-              [(ngModel)]="form.email"
+            <input type="email" class="form-control rt-input" [(ngModel)]="form.email"
               [placeholder]="'rabatTrips.form.emailPlaceholder' | translate"
-              [disabled]="status === 'loading'"
-            />
+              [disabled]="status === 'loading'" />
           </div>
 
-          <!-- Establishment (optional) -->
+          <!-- Establishment -->
           <div class="mb-3">
             <label class="form-label fw-semibold rt-label">
               {{ 'rabatTrips.form.establishment' | translate }}
               <span class="text-muted fw-normal small">({{ 'rabatTrips.form.optional' | translate }})</span>
             </label>
-            <input
-              type="text"
-              class="form-control rt-input"
-              [(ngModel)]="form.establishment"
-              [placeholder]="'rabatTrips.form.establishmentPlaceholder' | translate"
-              [disabled]="status === 'loading'"
-            />
+            <select class="form-select rt-input" [(ngModel)]="form.establishment" [disabled]="status === 'loading'">
+              <option [value]="null" disabled>{{ 'rabatTrips.form.establishmentPlaceholder' | translate }}</option>
+              <option *ngFor="let e of establishments" [value]="e.key">{{ estLabel(e) }}</option>
+            </select>
           </div>
 
           <!-- Destination -->
           <div class="mb-3">
             <label class="form-label fw-semibold rt-label">
-              {{ 'rabatTrips.form.destination' | translate }}
-              <span class="text-danger">*</span>
+              {{ 'rabatTrips.form.destination' | translate }} <span class="text-danger">*</span>
             </label>
             <div class="d-flex flex-wrap gap-2">
               <label class="rt-radio-btn" [class.selected]="form.destination === 'amci'">
@@ -168,56 +150,83 @@
           <!-- Reason -->
           <div class="mb-3">
             <label class="form-label fw-semibold rt-label">
-              {{ 'rabatTrips.form.reason' | translate }}
-              <span class="text-danger">*</span>
+              {{ 'rabatTrips.form.reason' | translate }} <span class="text-danger">*</span>
             </label>
-            <select
-              class="form-select rt-input"
-              [(ngModel)]="form.reason_key"
-              [disabled]="status === 'loading'"
-            >
+            <select class="form-select rt-input" [(ngModel)]="form.reason_key" [disabled]="status === 'loading'">
               <option value="" disabled>{{ 'rabatTrips.form.reasonPlaceholder' | translate }}</option>
-              <option *ngFor="let r of reasons" [value]="r.key">
-                {{ reasonLabel(r) }}
-              </option>
+              <option *ngFor="let r of reasons" [value]="r.key">{{ reasonLabel(r) }}</option>
             </select>
           </div>
 
-          <!-- Description (optional) -->
+          <!-- Description -->
           <div class="mb-4">
             <label class="form-label fw-semibold rt-label">
               {{ 'rabatTrips.form.description' | translate }}
               <span class="text-muted fw-normal small">({{ 'rabatTrips.form.optional' | translate }})</span>
             </label>
-            <textarea
-              class="form-control rt-input"
-              rows="3"
-              [(ngModel)]="form.description"
+            <textarea class="form-control rt-input" rows="3" [(ngModel)]="form.description"
               [placeholder]="'rabatTrips.form.descriptionPlaceholder' | translate"
-              [disabled]="status === 'loading'"
-            ></textarea>
+              [disabled]="status === 'loading'"></textarea>
           </div>
 
           <!-- Submit -->
-          <button
-            class="btn btn-success w-100 rt-submit-btn"
-            (click)="submit()"
-            [disabled]="!isValid() || status === 'loading'"
-          >
+          <button class="btn btn-success w-100 rt-submit-btn"
+            (click)="submit()" [disabled]="!isValid() || status === 'loading'">
             <span *ngIf="status !== 'loading'">
-              <i class="bi bi-send-fill me-2"></i>
-              {{ 'rabatTrips.form.submit' | translate }}
+              <i class="bi bi-send-fill me-2"></i>{{ 'rabatTrips.form.submit' | translate }}
             </span>
             <span *ngIf="status === 'loading'" class="d-flex align-items-center justify-content-center gap-2">
               <span class="spinner-border spinner-border-sm"></span>
               {{ 'rabatTrips.form.submitting' | translate }}
             </span>
           </button>
-
         </div>
         <!-- /FORM -->
-
       </div>
+
+      <!-- ===== MY DEMANDS COLUMN ===== -->
+      <div class="col-lg-5" *ngIf="demands.length > 0">
+        <div class="rt-demands-panel rounded-4 p-4">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="fw-bold mb-0 text-success">
+              <i class="bi bi-clock-history me-2"></i>{{ 'rabatTrips.demands.title' | translate }}
+              <span class="rt-badge ms-2">{{ demands.length }}</span>
+            </h5>
+            <button class="btn btn-sm rt-toggle-btn" (click)="showDemands = !showDemands">
+              <i class="bi" [class.bi-chevron-down]="!showDemands" [class.bi-chevron-up]="showDemands"></i>
+            </button>
+          </div>
+
+          <div *ngIf="showDemands" class="rt-demands-list">
+            <div *ngFor="let d of demands" class="rt-demand-item rounded-3 p-3 mb-3">
+              <div class="d-flex justify-content-between align-items-start gap-2">
+                <div class="flex-grow-1 min-w-0">
+                  <div class="fw-semibold rt-demand-name text-truncate">{{ d.full_name }}</div>
+                  <div class="rt-demand-meta d-flex flex-wrap gap-2 mt-1">
+                    <span class="rt-chip rt-chip-dest">{{ destLabel(d.destination) }}</span>
+                    <span class="rt-chip rt-chip-reason">{{ reasonLabelByKey(d.reason_key) }}</span>
+                  </div>
+                  <div class="rt-demand-date mt-2">
+                    <i class="bi bi-calendar3 me-1"></i>{{ formatDate(d.submitted_at) }}
+                  </div>
+                </div>
+                <button class="btn rt-del-btn flex-shrink-0"
+                  (click)="deleteDemand(d)"
+                  [disabled]="deletingId === d.local_id"
+                  [title]="'rabatTrips.demands.delete' | translate">
+                  <span *ngIf="deletingId !== d.local_id"><i class="bi bi-trash3"></i></span>
+                  <span *ngIf="deletingId === d.local_id" class="spinner-border spinner-border-sm"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="!showDemands" class="rt-demands-preview text-muted small">
+            {{ 'rabatTrips.demands.preview' | translate : { count: demands.length } }}
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

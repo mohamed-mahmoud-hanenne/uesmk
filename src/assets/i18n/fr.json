@@ -440,7 +440,6 @@
       "email": "Email",
       "emailPlaceholder": "votre@email.com",
       "establishment": "Établissement",
-      "establishmentPlaceholder": "Ex : ENSA Kénitra",
       "destination": "Destination",
       "reason": "Motif de la visite",
       "reasonPlaceholder": "-- Sélectionner un motif --",
@@ -453,7 +452,15 @@
       "successMsg": "Votre inscription a bien été reçue. L'équipe UESMK vous contactera dès qu'un voyage est organisé.",
       "errorTitle": "Erreur d'envoi",
       "errorMsg": "Une erreur est survenue. Vérifiez votre connexion et réessayez.",
-      "retry": "Réessayer"
+      "retry": "Réessayer",
+      "phoneHint": "Entrez votre numéro WhatsApp",
+      "establishmentPlaceholder": "-- Sélectionner un établissement --",
+      "newRequest": "Nouvelle demande"
+    },
+    "demands": {
+      "title": "Mes demandes",
+      "delete": "Supprimer",
+      "preview": "{{count}} demande(s) envoyée(s)"
     }
   }
 }

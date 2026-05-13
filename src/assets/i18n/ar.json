@@ -423,7 +423,6 @@
       "email": "البريد الإلكتروني",
       "emailPlaceholder": "your@email.com",
       "establishment": "المؤسسة",
-      "establishmentPlaceholder": "مثال: ENSA القنيطرة",
       "destination": "الوجهة",
       "reason": "سبب الزيارة",
       "reasonPlaceholder": "-- اختر السبب --",
@@ -436,7 +435,15 @@
       "successMsg": "تم استلام تسجيلك. سيتواصل معك فريق UESMK فور تنظيم الرحلة.",
       "errorTitle": "خطأ في الإرسال",
       "errorMsg": "حدث خطأ. تحقق من اتصالك بالإنترنت وحاول مجدداً.",
-      "retry": "إعادة المحاولة"
+      "retry": "إعادة المحاولة",
+      "phoneHint": "أدخل رقم واتساب الخاص بك",
+      "establishmentPlaceholder": "-- اختر المؤسسة --",
+      "newRequest": "طلب جديد"
+    },
+    "demands": {
+      "title": "طلباتي",
+      "delete": "حذف",
+      "preview": "{{count}} طلب/طلبات مُرسل(ة)"
     }
   }
 }
