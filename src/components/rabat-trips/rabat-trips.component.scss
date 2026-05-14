@@ -241,14 +241,15 @@
   padding-inline-start: 2.4rem;
 }
 
+// Force tel input to follow page direction — browsers don't inherit it automatically
+:host-context([dir="rtl"]) .rt-input-indented {
+  direction: rtl;
+}
+
 .rt-field-hint {
   font-size: 0.78rem;
   color: #6c757d;
   margin-top: 4px;
-}
-
-:host-context(body.dark-mode) .rt-field-hint {
-  color: #aaa;
 }
 
 // ===== MY DEMANDS PANEL =====
